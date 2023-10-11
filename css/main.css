@@ -1,0 +1,14 @@
+/*General formatting*/
+body {
+    background-color: whitesmoke;
+    font-family: helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Grid settings - PLACEHOLDER*/
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
