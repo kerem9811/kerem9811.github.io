@@ -18,7 +18,7 @@ body {
       
       header {
         padding: 10px 16px;
-        background: var(--oslomet-yellow)
+        background: var(--oslomet-yellow);
         color: black;
       }
       
@@ -45,8 +45,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--oslomet-yellow)
-  color: rgb(0, 0, 0);
+  background-color: var(--oslomet-yellow);
+  color: black;
   text-align: center;
 }
 /*Grid settings - PLACEHOLDER*/
