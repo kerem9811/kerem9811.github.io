@@ -1,54 +1,36 @@
-.header-top
-body.frontpage .o-header .header-wrapper .header-top
-
 /*General formatting*/
 body {
     background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-
-    
 }
 
-header {
-  background-color: rgb(255, 220, 0);
-  padding-top: 1px;
-  padding-bottom: 1px;
-  position: sticky;
-  top: 0;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 0px;
-}
-
-.top-container {
-  background-color: #f1f1f1;
-  padding: 0px;
-  text-align: center;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;       
-}
-
-.header {
-  padding: 0px 0px;
-  background: rgb(255, 220, 0);
-  color: black;
-}
+    .top-container {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+      }
+      
+      header {
+        padding: 10px 16px;
+        background: rgb(255, 220, 0);
+        color: black;
+      }
+      
+      .content {
+        padding: 16px;
+      }
+      
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .sticky + .content {
+        padding-top: 102px;
+      }
 
 /*Grid settings - PLACEHOLDER*/
 .wrapper {
