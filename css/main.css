@@ -1,6 +1,7 @@
 /*General formatting*/
 :root {
-  --oslomet-yellow: rgb(255, 220, 0)
+  --oslomet-yellow: rgb(255, 220, 0);
+  --darken: rgba(0,0,0,0.2);
 }
 
 body {
@@ -11,28 +12,73 @@ body {
     color: black;
 }
 
-h1 {
-  font-size: 2em;
-}
-      
-header {
-    padding: 10px 16px;
-    background: var(--oslomet-yellow);
-    position: sticky;
-    width: 100%;
-    height: 10vh;
-}
-
-footer {
-  background-color: var(--oslomet-yellow);
-  position: sticky;
-}
-
 main {
   width: 100%;
 }
 
-/*Grid settings - main*/
+header {
+  background-color: var(--oslomet-yellow);
+  position: sticky;
+  width: 100%;
+  height: 50px;
+}
+
+footer {
+  background-color: var(--oslomet-yellow);
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.header-footer-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dropdown{
+  position: sticky;
+  display: inline-block;
+}
+
+.dropdown-button{
+  background-color: var(--oslomet-yellow);
+  color: black;
+  font-size: 16px;
+  border: none;
+  padding-top: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: sticky;
+  background-color: var(--oslomet-yellow);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px var(--darken);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--darken);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: var(--oslomet-yellow);}
+
+
+
+/*Grid settings -------------------------------------------------------------*/
+
 .wrapper {
     width: 100%;
     display: grid;
@@ -42,16 +88,25 @@ main {
 
 .main-box {
   grid-column: 2 / 4;
-  grid-row: 2;
+  grid-row: 1;
   padding-top: 2vh;
 }
 
-/*Grid header*/
-
 .header-grid {
   display: grid;
-  grid-template-columns: auto auto 0px;
+  grid-template-columns: 50% 50% 0px;
   grid-template-rows: auto;
+}
+
+.header-left {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.header-right {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  text-align: right;
 }
 
 .footer-grid {
