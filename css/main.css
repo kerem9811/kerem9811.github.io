@@ -12,7 +12,7 @@ body {
         text-align: center;
       }
       
-      .header {
+      header {
         padding: 10px 16px;
         background: rgb(255, 220, 0);
         color: black;
@@ -31,7 +31,6 @@ body {
       .sticky + .content {
         padding-top: 102px;
       }
-}
 
 /*Grid settings - PLACEHOLDER*/
 .wrapper {
