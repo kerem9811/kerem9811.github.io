@@ -31,7 +31,15 @@ body {
       .sticky + .content {
         padding-top: 102px;
       }
-
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(250, 220, 0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
 /*Grid settings - PLACEHOLDER*/
 .wrapper {
     display: grid;
