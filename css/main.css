@@ -1,40 +1,61 @@
 /*General formatting*/
+:root {
+  --oslomet-yellow: rgb(255, 220, 0)
+}
+
 body {
     background-color: whitesmoke;
     font-family: Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    color: black;
 }
 
-    .top-container {
-        background-color: #f1f1f1;
-        padding: 30px;
-        text-align: center;
-      }
+h1 {
+  font-size: 2em;
+}
       
-      header {
-        padding: 10px 16px;
-        background: rgb(255, 220, 0);
-        color: black;
-      }
-      
-      .content {
-        padding: 16px;
-      }
-      
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      
-      .sticky + .content {
-        padding-top: 102px;
-      }
+header {
+    padding: 10px 16px;
+    background: var(--oslomet-yellow);
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+}
 
-/*Grid settings - PLACEHOLDER*/
+footer {
+  background-color: var(--oslomet-yellow);
+  position: sticky;
+}
+
+main {
+  width: 100%;
+}
+
+/*Grid settings - main*/
 .wrapper {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 20vw minmax(30vw, auto) minmax(30vw, auto) 20vw 0px;
     grid-template-rows: auto;
+}
+
+.main-box {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  padding-top: 2vh;
+}
+
+/*Grid header*/
+
+.header-grid {
+  display: grid;
+  grid-template-columns: auto auto 0px;
+  grid-template-rows: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto auto 0px;
+  grid-template-rows: auto;
 }
