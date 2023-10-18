@@ -1,8 +1,10 @@
-/*General formatting*/
+/*Fargedefinisjoner*/
 :root {
   --oslomet-yellow: rgb(255, 220, 0);
   --darken: rgba(0,0,0,0.2);
 }
+
+/*Div format*/
 
 body {
     background-color: whitesmoke;
@@ -35,6 +37,8 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/*Dropdown menu ----------------------------------------------------------------*/
 
 .dropdown{
   position: sticky;
