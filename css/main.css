@@ -4,6 +4,13 @@
   --darken: rgba(0,0,0,0.1);
 }
 
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
+}
 
 /*Div format*/
 
@@ -13,14 +20,6 @@ body {
     margin: 0px;
     padding: 0px;
     color: black;
-}
-
-h1{
-  font-size: 1.8em;
-}
-
-h2{
-  font-size: 1.4em;
 }
 
 main {
@@ -51,7 +50,7 @@ footer {
 }
 
 .footer-text {
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -60,14 +59,12 @@ footer {
 .dropdown{
   position: sticky;
   display: inline-block;
-  width: 100%
 }
 
 .dropdown-button{
   background-color: var(--oslomet-yellow);
   color: black;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 16px;
   border: none;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -89,9 +86,6 @@ footer {
   padding: 12px 20px;
   text-decoration: none;
   display: block;
-  font-weight: bold;
-  font-size: 0.8em;
-  text-align: left;
 }
 
 /* Change color of dropdown links on hover */
