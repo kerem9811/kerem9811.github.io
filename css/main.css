@@ -35,6 +35,11 @@ body {
       .sticky + .content {
         padding-top: 102px;
       }
+      #main-picture {
+        width: 800px;
+        height: auto;
+        max-width: 50vw;
+      }
 footer {
   position: fixed;
   left: 0;
