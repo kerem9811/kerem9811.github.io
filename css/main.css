@@ -123,7 +123,7 @@ footer {
   padding-bottom: 20px;
 }
 .picture-box{
-
+  max-width: 100%;
 }
 .caption-text{
   font-weight: lighter;
@@ -158,4 +158,5 @@ footer {
 .footer-main-box{
   grid-column: 2 / 4;
   grid-row: 1;
+  padding-bottom: 20px;
 }
