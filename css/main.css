@@ -1,8 +1,9 @@
 /*Fargedefinisjoner*/
 :root {
   --oslomet-yellow: rgb(255, 220, 0);
-  --darken: rgba(0,0,0,0.2);
+  --darken: rgba(0,0,0,0.1);
 }
+
 
 /*Div format*/
 
@@ -22,6 +23,14 @@ body {
     background-size: cover;
 }
 
+h1{
+  font-size: 1.8em;
+}
+
+h2{
+  font-size: 1.4em;
+}
+
 main {
   width: 100%;
 }
@@ -29,26 +38,29 @@ main {
 header {
   background-color: var(--oslomet-yellow);
   position: sticky;
+  top: 0px;
   width: 100%;
-  height: 60px;
+  height: 50px;
 }
 
 footer {
   background-color: var(--oslomet-yellow);
-  position: static;
   width: 100%;
+  padding-top: 5px;
   bottom: 0px;
   margin-bottom: 0px;
-  /*Makes footer extend to bottom
-  From: https://stackoverflow.com/questions/9741701/how-can-i-extend-a-footer-to-bottom-of-page*/
-  box-shadow: 0 50vh 0 50vh var(--oslomet-yellow);
+  box-shadow: 0 50vh 0 50vh var(--oslomet-yellow)
 }
 
-.header-footer-content {
-  font-weight: bold;
+.header-text {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  font-weight: bold;
+}
+
+.footer-text {
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 /*Dropdown menu ----------------------------------------------------------------*/
@@ -56,14 +68,19 @@ footer {
 .dropdown{
   position: sticky;
   display: inline-block;
+  width: 100%
 }
 
 .dropdown-button{
   background-color: var(--oslomet-yellow);
   color: black;
-  font-size: 16px;
+  font-size: 1em;
+  font-weight: bold;
   border: none;
-  padding-top: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -71,16 +88,18 @@ footer {
   display: none;
   position: sticky;
   background-color: var(--oslomet-yellow);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px var(--darken);
+  right: 0px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 20px;
   text-decoration: none;
   display: block;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: left;
 }
 
 /* Change color of dropdown links on hover */
@@ -88,11 +107,6 @@ footer {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: var(--oslomet-yellow);}
-
-
 
 /*Grid settings -------------------------------------------------------------*/
 
@@ -105,7 +119,8 @@ footer {
 .main-box {
   grid-column: 2 / 4;
   grid-row: 1;
-  padding-top: 2vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .picture-box{
 
@@ -134,7 +149,13 @@ footer {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: auto auto 0px;
-  grid-template-rows: auto;
+  width: 100%;
+    display: grid;
+    grid-template-columns: 20vw minmax(30vw, auto) minmax(30vw, auto) 20vw 0px;
+    grid-template-rows: auto;
+}
+
+.footer-main-box{
+  grid-column: 2 / 4;
+  grid-row: 1;
 }
