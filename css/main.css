@@ -63,6 +63,22 @@ footer {
   font-weight: bold;
 }
 
+.picture-box{
+  margin: 0px;
+}
+
+.image-container{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.caption-text{
+  font-weight: lighter;
+}
+.credit{
+  font-weight: lighter;
+}
+
 /*Dropdown menu ----------------------------------------------------------------*/
 
 .dropdown{
@@ -122,15 +138,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.picture-box{
-  max-width: 100%;
-}
-.caption-text{
-  font-weight: lighter;
-}
-.credit{
-  font-weight: lighter;
-}
+
 .header-grid {
   display: grid;
   grid-template-columns: 50% 50% 0px;
@@ -158,5 +166,5 @@ footer {
 .footer-main-box{
   grid-column: 2 / 4;
   grid-row: 1;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
