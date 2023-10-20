@@ -1,34 +1,26 @@
 /*Fargedefinisjoner*/
 :root {
-  --oslomet-yellow: rgb(255, 220, 0);
+  --om-yellow: rgb(255, 220, 0);
   --darken: rgba(0,0,0,0.1);
 }
 
-
-/*Div format*/
+/*Diverse formatering*/
 
 body {
+    width: fit-content;
     height: 100%;
     color: black;
     background-color: whitesmoke;
-    font-family: Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
+/* Egen formatering til topical-siden sin body */
 .topical-body{
-    background-image: url("https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg?w=942&h=623&crop=1&resize=942%2C623");
+    background-image: url("../media/images/tankian.webp");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-h1{
-  font-size: 1.8em;
-}
-
-h2{
-  font-size: 1.4em;
 }
 
 main {
@@ -36,34 +28,51 @@ main {
 }
 
 header {
-  background-color: var(--oslomet-yellow);
+  background-color: var(--om-yellow);
   position: sticky;
-  top: 0px;
+  padding-top: 0;
   width: 100%;
-  height: 50px;
-}
-
-footer {
-  background-color: var(--oslomet-yellow);
-  width: 100%;
-  padding-top: 5px;
-  bottom: 0px;
-  margin-bottom: 0px;
-  box-shadow: 0 50vh 0 50vh var(--oslomet-yellow)
+  height: 3.5rem;
 }
 
 .header-text {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-weight: bold;
+}
+.videobox{
+  max-width: 300rem;
+}
+
+h1{
+  font-size: 1.8rem;
+}
+
+h2{
+  font-size: 1.4rem;
+}
+
+footer {
+  background-color: var(--om-yellow);
+  width: 100%;
+  padding-top: 0.5rem;
+  bottom: 0;
+  margin-bottom: 0;
+  box-shadow: 0 50vh 0 50vh var(--om-yellow)
 }
 
 .footer-text {
-  font-size: 0.8em;
   font-weight: bold;
 }
+.picture{
+  /* max-width: 10rem; */
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
 
-/*Dropdown menu ----------------------------------------------------------------*/
+/* Dropdown meny ----------------------------------------------------------------*/
+/* https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown{
   position: sticky;
@@ -72,26 +81,22 @@ footer {
 }
 
 .dropdown-button{
-  background-color: var(--oslomet-yellow);
+  background-color: var(--om-yellow);
   color: black;
   font-size: 1em;
   font-weight: bold;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown innhold (skjult som standard) */
 .dropdown-content {
   display: none;
   position: sticky;
-  background-color: var(--oslomet-yellow);
+  background-color: var(--om-yellow);
   right: 0px;
 }
 
-/* Links inside the dropdown */
+/* Linker inni dropdown meny */
 .dropdown-content a {
   color: black;
   padding: 12px 20px;
@@ -102,50 +107,73 @@ footer {
   text-align: left;
 }
 
-/* Change color of dropdown links on hover */
+/* Skifte farge på linker ved hovring */
 .dropdown-content a:hover {background-color: var(--darken);}
 
-/* Show the dropdown menu on hover */
+/* Vis dropdown menyen ved hovring */
 .dropdown:hover .dropdown-content {display: block;}
 
 /*Grid settings -------------------------------------------------------------*/
 
-.wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20vw minmax(30vw, auto) minmax(30vw, auto) 20vw 0px;
-    grid-template-rows: auto;
-}
-.main-box {
-  grid-column: 2 / 4;
-  grid-row: 1;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.picture-box{
-  max-width: 100%;
-}
-.caption-text{
-  font-weight: lighter;
-}
-.credit{
-  font-weight: lighter;
-}
 .header-grid {
   display: grid;
-  grid-template-columns: 50% 50% 0px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
-
 .header-left {
   grid-column: 1 / 2;
   grid-row: 1;
 }
-
 .header-right {
-  grid-column: 2 / 3;
+  grid-column: 2 / 2;
   grid-row: 1;
   text-align: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "kol1rad1 kol2rad1"
+    "kol1rad2 kol2rad2"
+    "kol1rad3 kol2rad3";
+}
+.kol1rad1 {
+  grid-area: kol1rad1;
+  background-color: #477cb2;
+}
+
+.kol2rad1 {
+  grid-area: kol2rad1;
+  background-color: #30a9bd;
+}
+
+
+.kol1rad2 {
+  grid-area: kol1rad2;
+  background-color: #65b3c2;
+}
+
+.kol2rad2 {
+  grid-area: kol2rad2;
+  background-color: #6abbc5;
+}
+
+.kol2rad3 {
+  grid-area: kol2rad3;
+  background-color: #93c1c7;
+}
+
+.kol1rad3 {
+  grid-area: kol1rad3;
+  background-color: #9cc2c7;
+}
+
+.caption-text{
+  font-weight: lighter;
 }
 
 .footer-grid {

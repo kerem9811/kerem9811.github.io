@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <!-- Vi har to stylesheets for å kunne ha en knapp til hamburger-menyen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Data 1200 - Webutvikling og inkluderende design - Eksamen - Høst 2023</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data 1200 - Webutvikling og inkluderende design - H23 -  Eksamen - Gruppe 96</title>
 </head>
     <!-- Topical-page
 Copy a short text (anywhere from 300 to 1000 words) from 
@@ -28,7 +26,7 @@ If you wish to show off some skills, but found that difficult with the other pag
 you can make this (or another) page different from the others, with a distinct 
 visual of functional identity. -->
 
-    <body class="topical-body">
+<body class="topical-body">
     <header class="header-grid">
         <div class="header-left">
             <p class="header-text">
@@ -38,7 +36,7 @@ visual of functional identity. -->
         <div class="header-right">
             <div class="header-text">
                 <div class="dropdown">
-                    <button class="dropdown-button"><i class="fa fa-bars"></i> Meny</button>
+                    <button class="dropdown-button"></i> ☰ Meny</button>
                     <div class="dropdown-content">
                         <a href="index.html">Index</a>
                         <a href="accessibility.html">Accessibility</a>
@@ -51,11 +49,12 @@ visual of functional identity. -->
         </div>
     </header>
 
-    <main class="wrapper">
-        <article class="main-box">
+    <main class="grid-container">
+        <article class="main-box-left">
             <h1>
                 Tengel = Tankian?
             </h1>
+
             <p>
                 Har noen noensinne sett Tengel og Tankian i samme rom samtidig?
                 Det burde være klinkende klart for alle at grunnen til at
@@ -66,14 +65,22 @@ visual of functional identity. -->
                 med å gi ut enda mer musikk, men vi er glade for at vi har fått en god
                 lærer i "Tengel".
             </p>
+
             <h2>
                 Videobevis
             </h2>
-            <video controls width="400">
-                <source src="media/video/tankian tengel.mp4" type="video/mp4"/>
 
+            <div class="videobox">
+            <video controls width="300 rem" poster="media/images/tankian.webp">
+                <source src="media/video/tankian-tengel.webm" type="video/webm"/>
+                <source src="media/video/tankian-tengel.mp4" type="video/mp4"/>
+                Last ned
+                <a href="media/video/tankian-tengel.webm">WEBM</a>
+                or
+                <a href="media/video/tankian-tengel.mp4">MP4</a>
+                video.
             </video>
-
+            </div>
                 <p>
                     The smoking gun.
                 </p>
