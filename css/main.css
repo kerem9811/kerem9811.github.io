@@ -48,9 +48,9 @@ footer {
 
 .header-footer-content {
   font-weight: bold;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 0px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 /*Dropdown meny som kommer frem når man hovrer over.----------------------*/
@@ -63,10 +63,10 @@ footer {
 .dropdown-button{
   background-color: var(--oslomet-yellow);
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
-  padding-top: 15px;
+  padding-top: 1rem;
 }
 
 /* Dropdown innhold, skjult som standard */
