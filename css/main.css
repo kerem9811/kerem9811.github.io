@@ -126,7 +126,7 @@ footer {
 
 .wrapper {
     display: grid;
-    grid-template-columns: minmax(5px, 20%) minmax(30%, 400px) minmax(30%, 400px) minmax(5px, 20%) 0px;
+    grid-template-columns: minmax(10px, 20%) minmax(30%, 400px) minmax(30%, 400px) minmax(10px, 20%) 0px;
     grid-template-rows: auto;
 }
 
