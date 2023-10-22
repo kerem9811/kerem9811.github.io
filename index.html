@@ -2,56 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data 1200 - Webutvikling og inkluderende design - H23 -  Eksamen - Gruppe 96</title>
 </head>
-
-<body>
-        <!-- Theme: OsloMet Campus in general or Pilestredet 35 in particular
+<!-- Theme: OsloMet Campus in general or Pilestredet 35 in particular
         index.html should have a general introduction with at least one relevant image -->
-
+<body>
     <header class="header-grid">
-        <div class="header-left">
+        <div class="headerkol1">
             <p class="header-text">
-                Main Page
+                Hovedside
             </p>
         </div>
-            <div class="header-right">
-                <div class="dropdown">
-                    <button class="dropdown-button"> ☰ Meny</button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Index</a>
-                        <a href="accessibility.html">Accessibility</a>
-                        <a href="topical.html">Topical</a>
-                        <a href="ymse1.html">Ymse1</a>
-                        <a href="ymse2.html">Ymse2</a>
-                    </div>
+        <div class="headerkol2">
+            <div class="dropdown">
+                <button class="dropdown-button"> ☰ Meny</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Hovedside</a>
+                    <a href="topical.html">Topical</a>
+                    <a href="accessibility.html">Accessibility</a>
+                    <a href="ymse1.html">Ymse1</a>
+                    <a href="ymse2.html">Ymse2</a>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main class="grid-container">
-            <div class="kol1rad1">
+    <main class="main-grid-container">
+        <div class="grid1">
+             <section>
                 <h1>
                     En presentasjon av kantinen i P35
                 </h1>
                 <p>
-                    ljfsdaljksdfaldfsaldfsl afdshj lafsdkjh sdalj fhlasjkh dflaskh
-                    fdlkash fdlkj ashdlfjk ahlsd fhlasjh lfdkjsah fkjhsaldfh laskj hflaksh f
-                    lasjk hlas hflsah dflash dflaskh flj slad flash flash lfkhaslkj hflaskh d
-                    flkash lfdkj hasl kj hflsajkhflkashfjash dlfjkashl kjf dalsk fhlash
-                    dlfjkhaslkjf hlsaj hfljash lfdjk hasldfh lsahd flash lfkj hsalhf lsah flkash
-                    dlfh aslkfh lksah flsah lfdj haslkjfh lsahf dlash fdlahs dlkjfh asldjfh lash flash dljkfh
+                    Her kan vi litt info om kantinen. For eksempel tips til gode tilbud
+                    eller mat som er bra. Kanskje en innføring i prising, og om hvordan kutymen for salat er.
+                    Vi kan tipse om kaffetilbudet og at du kan ta med egen kopp. Hvis det er andre ting,
+                    må vi få dem med, jeg skriver bare dette for å få en viss ide om hvor vi
+                    ligger an og hvor lang teksten skal være.
                 </p>
-            </div>
-
-            <div class="kol2rad1">
-                <figure class="picture">
+             </section>
+        </div>
+        <div class="grid2-img1">
+                <figure><!--BILDENE SKALERER NÅ AV SEG SELV!-->
                     <picture>
-                        <img src="media/images/infosenter-800.webp" alt="En stor og åpen foajé med en et infosenter til P35." style="width:auto;">
-                        <source media="(min-width:800px)" srcset="media/images/infosenter-800.webp">
-                        <source media="(min-width:400px)" srcset="media/images/infosenter-400.webp.webp">
+                        <source srcset="media/images/infosenter-800.webp" media="(max-width:800px)">
+                        <source srcset="media/images/infosenter-600.webp" media="(max-width:600px)">
+                        <source srcset="media/images/infosenter-400.webp" media="(max-width:400px)">
+                        <source srcset="media/images/infosenter-300.webp" media="(max-width:300px)">
+                        <img class="image-container" src="media/images/infosenter-1000.webp"
+                             alt="En stor og åpen foajé med en et infosenter til P35.">
                     </picture>
                     <figcaption>
                         <p class="caption-text">
@@ -59,82 +60,90 @@
                         </p>
                     </figcaption>
                 </figure>
-            </div>
+        </div>
 
-            <div class="kol1rad2">
-                <figure class="picture">
-                    <picture>
-                        <img src="media/images/infosenter-800.webp" alt="En stor og åpen foajé med en et infosenter til P35." style="width:auto;">
-                        <source media="(min-width:800px)" srcset="media/images/infosenter-800.webp">
-                        <source media="(min-width:400px)" srcset="media/images/infosenter-400.webp.webp">
-                    </picture>
-                    <figcaption>
-                        <p class="caption-text">
-                            Et bilde av infosenteret i P35. Fotograf: thlon2720
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="kol2rad2">
+        <div class="grid4">
+            <section>
                 <h2>
-                    Overskrift til hoveddel
+                    5 topp tips om kantinen eller noe
                 </h2>
 
                 <p>
-                    ljfsdaljksdfaldfsaldfsl afdshj lafsdkjh sdalj fhlasjkh dflaskh fdlkash fdlkj ashdlfjk ahlsd fhlasjh lfdkjsah fkjhsaldfh laskj hflaksh flasjk hlas hflsah dflash dflaskh flj slad flash flash lfkhaslkj hflaskh dflkash lfdkj hasl kj hflsajkhflkashfjash dlfjkashl kjf dalsk fhlash dlfjkhaslkjf hlsaj hfljash lfdjk hasldfh lsahd flash lfkj hsalhf lsah flkash dlfh aslkfh lksah flsah lfdj haslkjfh lsahf dlash fdlahs dlkjfh asldjfh lash flash dljkfh
-                    ljfsdaljksdfaldfsaldfsl afdshj lafsdkjh sdalj fhlasjkh dflaskh fdlkash fdlkj ashdlfjk ahlsd fhlasjh lfdkjsah fkjhsaldfh laskj hflaksh flasjk hlas hflsah dflash dflaskh flj slad flash flash lfkhaslkj hflaskh dflkash lfdkj hasl kj hflsajkhflkashfjash dlfjkashl kjf dalsk fhlash dlfjkhaslkjf hlsaj hfljash lfdjk hasldfh lsahd flash lfkj hsalhf lsah flkash dlfh aslkfh lksah flsah lfdj haslkjfh lsahf dlash fdlahs dlkjfh asldjfh lash flash dljkfh
+                    Under kommer 5 topp tips om kantinen i P 35. Denne teksten er bare en slags
+                    ingress før vi kommer til de 5 beste tipsene. Bla bla bla bla bla bla bla.
                 </p>
-            </div>
-
-            <div class="kol2rad3">
-                <figure class="picture">
-                    <picture>
-                        <img src="media/images/infosenter-800.webp" alt="En stor og åpen foajé med en et infosenter til P35." style="width:auto;">
-                        <source media="(min-width:800px)" srcset="media/images/infosenter-800.webp">
-                        <source media="(min-width:400px)" srcset="media/images/infosenter-400.webp.webp">
-                    </picture>
-                    <figcaption>
-                        <p class="caption-text">
-                            Et bilde av infosenteret i P35. Fotograf: thlon2720
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="kol1rad3">
-                <h2>
-                    Overskrift nummer 2
-                </h2>
-
-                <p>
-                    Det første avsnittet til hoveddelen fsfd
-                    sdf
-                    fsfdfdsfdsdffsd
-                    fsfdfdsfdsdffsdsdfsdf
-                    dsfsdfsd
-                    fsfdfdsfdsdffsdfdsfsd
-                    sdfsdfsd
-                    sdfsfsdfds
-                    sdfsdffsdfdsfdsfds
-                    sdffdssfdsdffsdsdf
-                </p>
-            </div>
-        </main>
-
-        <footer class="footer-grid">
-            <div class="footer-main-box">
-                <section class="footer-text">
                     <h3>
-                        Bidragsytere
+                        Topp 5 Tips
                     </h3>
-                    <ul>
-                        <li>kerem9811</li>
-                        <li>thlon2720</li>
-                        <li>balin6546</li>
-                    </ul>
-                </section>
-            </div>
+                        <ul>
+                            <li>Kaffe: Kaffe til 12 kr med egen kopp</li>
+                            <li>Salat: Salatbaren er fresh og fin</li>
+                            <li>Frukt: En bit frukt hjelper deg å nå 5 om dagen</li>
+                            <li>Kaker: Alltid godt med noe søtt etter maten</li>
+                            <li>Energidrikke: Det er ikke sunt, men allikevel populært</li>
+                        </ul>
+            </section>
+        </div>
+        <div class="grid3-img2">
+            <figure><!--BILDENE SKALERER NÅ AV SEG SELV!-->
+                <picture>
+                    <source srcset="media/images/infosenter-800.webp" media="(max-width:800px)">
+                    <source srcset="media/images/infosenter-600.webp" media="(max-width:600px)">
+                    <source srcset="media/images/infosenter-400.webp" media="(max-width:400px)">
+                    <source srcset="media/images/infosenter-300.webp" media="(max-width:300px)">
+                    <img class="image-container" src="media/images/infosenter-1000.webp"
+                             alt="En stor og åpen foajé med en et infosenter til P35.">
+                </picture>
+                <figcaption>
+                    <p>
+                        Et bilde av infosenteret i P35. Fotograf: thlon2720
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="grid5">
+            <section>
+                <h2>
+                    Her kommer enda en overskrift
+                </h2>
+                <p>
+                    Her er nok en sak om noe som skjer i kantineområdet i P35.
+                    Kanskje noe om kunsten? Kanskje vi kan lage en collage med de forskjellige kunstverkene
+                    som er her. Så kan vi skrive litt om det og se på bildene som henger.
+                    Så skriver vi litt mer for å fylle ut og gjøre teksten litt mer sannynlig.
+                    Nå tror jeg snart vi har nok tekst. Enda en linje for å fylle ut.
+                    Dette tror jeg er nok tekst for nå.
+                </p>
+            </section>
+        </div>
+        <div class="grid6-img3">
+                <figure><!--BILDENE SKALERER NÅ AV SEG SELV!-->
+                    <picture>
+                        <source srcset="media/images/infosenter-800.webp" width="800" height="378" media="(max-width:800px)">
+                        <source srcset="media/images/infosenter-600.webp" width="600" height="378" media="(max-width:600px)">
+                        <source srcset="media/images/infosenter-400.webp" width="400" height="189" media="(max-width:400px)">
+                        <source srcset="media/images/infosenter-300.webp" width="300" height="189" media="(max-width:300px)">
+                        <img class="image-container" src="media/images/infosenter-1000.webp" width="1000" height="567"
+                             alt="En stor og åpen foajé med et infosenter til P35.">
+                    </picture>
+                    <figcaption>
+                        <p>
+                            Et bilde av infosenteret i P35. Fotograf: thlon2720
+                        </p>
+                    </figcaption>
+                </figure>
+        </div>
+        </main>
+        <footer class="footer-text">
+            <h3>
+                Bidragsytere
+            </h3>
+            <ul>
+                <li>kerem9811</li>
+                <li>thlon2720</li>
+                <li>balin6546</li>
+            </ul>
         </footer>
     </body>
 </html>
