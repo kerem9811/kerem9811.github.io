@@ -7,14 +7,17 @@
 /*Diverse formatering*/
 
 body {
-    width: fit-content;
-    height: 100%;
-    color: black;
-    background-color: whitesmoke;
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  width: 99vw;
+  height: 100%;
+  /*color: whitesmoke;*/
+  /*background-color: black;*/
+  color: black;
+  background-color: whitesmoke;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 /* Egen formatering til topical-siden sin body */
 .topical-body{
     background-image: url("../media/images/tankian.webp");
@@ -22,17 +25,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-main {
-  width: 100%;
+.videobox{
+  max-width: 60vw;
 }
 
 header {
   background-color: var(--om-yellow);
-  position: sticky;
-  padding-top: 0;
   width: 100%;
-  height: 3.5rem;
+  height: 3rem;
+  position: sticky;
+  font-weight: bold;
+  padding-top: 0;
+  top: 0;
+
 }
 
 .header-text {
@@ -40,35 +45,35 @@ header {
   padding-right: 1rem;
   font-weight: bold;
 }
-.videobox{
-  max-width: 300rem;
-}
 
-h1{
-  font-size: 1.8rem;
-}
-
-h2{
-  font-size: 1.4rem;
+main {
+  width: 100%;
 }
 
 footer {
   background-color: var(--om-yellow);
-  width: 100%;
+  width: 100vw;
   padding-top: 0.5rem;
+  padding-left: 1rem;
   bottom: 0;
   margin-bottom: 0;
-  box-shadow: 0 50vh 0 50vh var(--om-yellow)
+  box-shadow: 0 50vh 0 50vh var(--om-yellow);
+  font-weight: bold;
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
-.footer-text {
-  font-weight: bold;
-}
-.picture{
-  /* max-width: 10rem; */
-  object-fit: cover;
+.image-container{
+  overflow:auto;
   width: 100%;
-  max-height: 100%;
+  object-fit: cover;
+  height: auto;
+
+}
+figcaption{
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 /* Dropdown meny ----------------------------------------------------------------*/
@@ -77,20 +82,25 @@ footer {
 .dropdown{
   position: sticky;
   display: inline-block;
-  width: 100%
+  width: 20%
 }
 
 .dropdown-button{
   background-color: var(--om-yellow);
   color: black;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /* Dropdown innhold (skjult som standard) */
 .dropdown-content {
   display: none;
+  text-align: right;
   position: sticky;
   background-color: var(--om-yellow);
   right: 0;
@@ -103,88 +113,86 @@ footer {
   text-decoration: none;
   display: block;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: left;
 }
 
 /* Skifte farge på linker ved hovring */
-.dropdown-content a:hover {background-color: var(--darken);}
+.dropdown-content a:hover {
+  background-color: var(--darken);
+}
 
 /* Vis dropdown menyen ved hovring */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*Grid settings -------------------------------------------------------------*/
-
-.header-grid {
+.header-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  max-height: 10vw;
+  grid-template-columns: 49.99999% 49.99999% 0px;
   grid-template-rows: auto;
-}
-.header-left {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-.header-right {
-  grid-column: 2 / 2;
-  grid-row: 1;
-  text-align: right;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0 0;
-  grid-auto-flow: row;
   grid-template-areas:
-    "kol1rad1 kol2rad1"
-    "kol1rad2 kol2rad2"
-    "kol1rad3 kol2rad3";
+    "headerkol1 headerkol2";
+  gap: 0 0;
 }
-.kol1rad1 {
-  grid-area: kol1rad1;
-  background-color: #477cb2;
+.headerkol1 {
+  grid-area: headerkol1;
+  background-color: var(--om-yellow);
+  /*max-width: 50vw;*/
+  width:100%;
 }
-
-.kol2rad1 {
-  grid-area: kol2rad1;
-  background-color: #30a9bd;
+.headerkol2 {
+  grid-area: headerkol2;
+  background-color: var(--om-yellow);
+  /*max-width: 50vw;*/
+  width:100%;
+  /*align-content: stretch;*/
 }
-
-
-.kol1rad2 {
-  grid-area: kol1rad2;
-  background-color: #65b3c2;
-}
-
-.kol2rad2 {
-  grid-area: kol2rad2;
-  background-color: #6abbc5;
-}
-
-.kol2rad3 {
-  grid-area: kol2rad3;
-  background-color: #93c1c7;
+.main-grid-container {
+  width: 100vw;
+  gap: 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.kol1rad3 {
-  grid-area: kol1rad3;
-  background-color: #9cc2c7;
+.grid1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.grid2-img1 {
+  grid-area: 1 / 2 / 2 / 3;
+  border:0.1rem black solid;
+  overflow:hidden;
+  object-fit: contain;
+}
+.grid3-img2 {
+  grid-area: 2 / 1 / 3 / 2;
+  border:0.1rem black solid;
+  overflow:hidden;
+  object-fit: contain;
+}
+.grid4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.grid5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.grid6-img3 {
+  grid-area: 3 / 2 / 4 / 3;
+  border:0.1rem black solid;
+  overflow:hidden;
+  object-fit: contain;
 }
 
-.caption-text{
-  font-weight: lighter;
-}
-
-.footer-grid {
-  width: 100%;
-    display: grid;
-    grid-template-columns: 20vw minmax(30vw, auto) minmax(30vw, auto) 20vw 0;
-    grid-template-rows: auto;
-}
-
-.footer-main-box{
-  grid-column: 2 / 4;
-  grid-row: 1;
-  padding-bottom: 20px;
-}
+  /* Bredden blir 100% når viewport blir 800px eller mindre.
+  Hentet fra: https://www.w3schools.com/html/html_responsive.asp */
+  @media screen and (max-width: 800px) {
+    .grid1 .grid2-img1 .grid3-img2 .grid4 .grid5 .grid6-img3 {
+      width: 100%;
+    }
+  }
