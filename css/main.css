@@ -22,9 +22,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.videobox{
+.videobox {
   max-width: 60vw;
-
+}
 h1{
   font-size: 3em;
   padding-left: 60px;
@@ -91,7 +91,7 @@ footer {
   object-fit: fill;
   height: auto;
 }
-figcaption{
+.figcaption{
   visibility: hidden;
   font-size: 0.8rem;
   font-weight: bold;
@@ -211,7 +211,7 @@ figcaption{
 .footer-main-box{
   grid-column: 2 / 4;
   grid-row: auto;
-  padding-bottom: 10px;
+  padding-bottom: 10px;}
 .grid1 {
   grid-area: 1 / 1 / 2 / 2;
   background-color: #ade1de;
