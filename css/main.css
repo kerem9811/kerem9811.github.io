@@ -55,7 +55,6 @@ header {
 
 .header-text {
   padding-left: 1rem;
-  padding-right: 1rem;
   /*font-weight: bold;*/
 }
 
@@ -156,6 +155,7 @@ footer {
     grid-column: 1 / 5;
     background-color: var(--primary-color);
     padding-left: 60px;
+    padding-bottom: 10px;
   }
   /*BOKSER BRUKT TIL PAGE CONTENT-----------------------------------------------------------------------*/
   .main-center-box {
