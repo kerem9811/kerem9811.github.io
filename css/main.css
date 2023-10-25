@@ -1,10 +1,10 @@
-/*Fargedefinisjoner*/
+/*Fargedefinisjoner --------------------------------------------------------------- ----*/
 :root {
   --primary-color: rgb(255, 150, 200);
   --darken: rgba(0,0,0,0.1);
 }
 
-/*Diverse formatering*/
+/*Generell formatering --------------------------------------------------------------------*/
 body {
   height: 100%;
   color: black;
@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-/* Egen formatering til topical-siden sin body */
+/* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
     background-image: url("../media/images/tankian.webp");
     background-position: right;
@@ -24,6 +24,8 @@ body {
 .videobox {
   max-width: 60vw;
 }
+
+/* SEMantic elements - headings osv osv ------------------------------------------------------*/
 h1{
   font-size: 3em;
   padding-left: 60px;
@@ -40,6 +42,8 @@ h2{
   margin-right: 38vw;
   padding-bottom: 20px;
 }
+
+/*HEADER VISUELT -------------------------------------------------------------------------------*/
 
 header {
   background-color: var(--primary-color);
@@ -60,7 +64,7 @@ header {
 main {
   width: 100%;
 }
-
+/*FOOTER VISUELT --------------------------------------------------------------------------------*/
 footer {
   background-color: var(--primary-color);
   width: 100%;
@@ -73,42 +77,24 @@ footer {
 .footer-text{
   padding-left: 1rem;
 }
-
+/*
 .background-image-text{
   font-size: 0.8rem;
   color: var(--primary-color);
   font-weight: bold;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
-  /*position: bottom;*/
-}
+  position: bottom;
+}*/
+
+/*BILDEKONTAINER - SKALERER BILDE TIL GRID BOX --------------------------------------------------*/
 .image-container{
   overflow:hidden;
   max-width: 100%;
   object-fit: fill;
 }
-.figcaption{
-  visibility: hidden;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-align: center;
-  caption-side: bottom;
-  display: inline-block;
-}
 
-.image-container{
-  max-width: 100%;
-  object-fit: contain;
-}
 
-.caption-text{
-  font-weight: lighter;
-}
-.credit{
-  font-weight: lighter;
-}
-
-/*Dropdown menu ----------------------------------------------------------------*/
 /* Dropdown meny ----------------------------------------------------------------*/
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 
@@ -154,17 +140,19 @@ footer {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/*Grid settings -------------------------------------------------------------*/
-
+/*Grid settings -----------------------------------------------------------------------------------*/
+/*HOVEDGRID  CONTAINER-----------------------------------------------------------------------------*/
 .wrapper {
     display: grid;
     grid-template-columns: minmax(10px, 20%) minmax(30%, 400px) minmax(30%, 400px) minmax(10px, 20%) 0;
     grid-template-rows: auto;
 }
+/*ØVERSTE BOKS, PSEUDO-HEADER_________________________________________________________________________*/
 .top-box {
   grid-column: 1 / 5;
   background-color: var(--primary-color);
 }
+/*BOKSER BRUKT TIL PAGE CONTENT-----------------------------------------------------------------------*/
 .main-center-box {
   grid-column: 2 / 4;
   padding-top: 20px;
@@ -188,11 +176,13 @@ footer {
 .main-right-img-box {
   grid-column: 3 / 5;
 }
+/*HEADER GRID CONTAINER-------------------------------------------------------------------------------*/
 .header-grid {
   display: grid;
   grid-template-columns: 50% 50% 0;
   grid-template-rows: auto;
 }
+/*HEADER BOXES----------------------------------------------------*/
 .header-left {
   grid-column: 1 / 2;
 }
@@ -200,11 +190,13 @@ footer {
   grid-column: 2 / 3;
   text-align: right;
 }
+/*FOOTER GRID CONTAINER ---------------------------------------------------------------------------------------*/
 .footer-grid {
     display: grid;
     grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
     grid-template-rows: auto;
 }
+/*FOOTER BOXES---------------------------------------------------*/
 .footer-main-box{
   grid-column: 2 / 4;
   padding-bottom: 10px;
