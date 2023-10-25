@@ -102,7 +102,7 @@ footer {
 .dropdown{
   position: sticky;
   display: inline-block;
-  width: 75%;
+  width: 50%;
 }
 
 .dropdown-button{
