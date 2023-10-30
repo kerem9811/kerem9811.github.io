@@ -29,33 +29,38 @@ you can make this (or another) page different from the others, with a distinct
 visual of functional identity. -->
 
 <body class="topical-body">
-    <header class="header-grid">
-        <div class="header-left">
-            <p class="header-text">
-                Tankian
-            </p>
-        </div>
-        <div class="header-right">
-            <div class="header-text">
-                <div class="dropdown">
-                    <button class="dropdown-button"> ☰ Meny</button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Hovedside</a>
-                        <a href="p35.html">P35 Generelt</a>
-                        <a href="kantine.html">Kantina i P35</a>
-                        <a href="topical.html">Tankian</a>
-                        <a href="accessibility.html">Tilgjengelighet</a>
-                    </div>
+<header class="header-grid">
+    <div class="header-left">
+        <p class="header-text">
+            P35
+        </p>
+    </div>
+    <div class="header-right">
+        <div class="header-text">
+            <div class="dropdown">
+                <button class="dropdown-button"> ☰ Meny</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Hovedside</a>
+                    <a href="points-of-interest.html">Viktige steder</a>
+                    <a href="kantina.html">Kantina</a>
+                    <a href="topical.html">Tankian</a>
+                    <a href="accessibility.html">Tilgjengelighet</a>
                 </div>
             </div>
         </div>
-    </header>
-
-    <main>
-        <article>
+    </div>
+</header>
+    <main class="wrapper">
+        <section class="top-box">
             <h1>
                 Tengel = Tankian?
             </h1>
+            <p class="subtitle">
+                Ikke alle er hvem du tror de er
+            </p>
+        </section>
+
+        <section class="main-center-box">
 
             <p class="topical-paragraph">
                 Har noen noensinne sett Tengel og Tankian i samme rom samtidig?
@@ -73,7 +78,7 @@ visual of functional identity. -->
             </h2>
 
             <div class="videobox">
-            <video controls width="500 rem" poster="media/images/tankianpic.png">
+            <video controls width="500 rem" poster="media/images/tankian.webp">
                 <source src="media/video/tankian-tengel.webm" type="video/webm"/>
                 <source src="media/video/tankian-tengel.mp4" type="video/mp4"/>
                 Last ned
@@ -84,7 +89,24 @@ visual of functional identity. -->
             </video>
             </div>
 
-        </article>
+            <!-- PLACEHOLDER bilde
+            <figure>
+                <picture>
+                    <img src="media/images/oslomet-logo-transparent.webp" alt="OsloMet transparent logo">
+                    <source media="(min-width:800px)" srcset=".media/PATH-800px.webp">
+                    <source media="(min-width:500px)" srcset=".media/PATH-500px.WebP">
+                </picture>
+                <figcaption>
+                    <div class="caption-text">
+                        Et bilde av OsloMet sin logo.
+                    </div>
+                    <div class="credit">
+                        Photo source: <a href="https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_OsloMet.ai.info">foto.oslomet.no</a>
+                    </div>
+                </figcaption>
+            </figure>
+             -->
+        </section>
     </main>
 
     <footer class="footer-grid">
