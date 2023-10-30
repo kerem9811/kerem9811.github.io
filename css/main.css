@@ -1,6 +1,6 @@
 /*Fargedefinisjoner --------------------------------------------------------------- ----*/
 :root {
-  --primary-color: rgb(255, 150, 200);
+  --primary-color: #18656f;
   --darken: rgba(0,0,0,0.1);
 }
 
@@ -16,15 +16,23 @@ body {
 
 /* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
-    background-image: url("../media/images/tankian.webp");
+    background-image: url("../media/images/tankianmorph.gif");
     background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    align-content: center;
 }
 .videobox {
   max-width: 60vw;
+  align-content: center;
 }
-
+.topical-paragraph{
+  padding-left: 50px;
+  background-color: cadetblue;
+  width: 50vw;
+}
+.topical-h2{
+  padding-left: 50px;
+}
 /* SEMantic elements - headings osv osv ------------------------------------------------------*/
 h1{
   font-size: 3em;
