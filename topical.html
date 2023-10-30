@@ -2,9 +2,11 @@
 <html lang="nb">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Dette er hovedsiden til eksamen i Data 1200 Webutvikling og
+         inkluderende design, fra gruppe 96.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>data1200-eksamen-h23</title>
+    <title>Data 1200 - Webutvikling og inkluderende design - H23 -  Eksamen - Gruppe 96</title>
 </head>
     <!-- Topical-page
 Copy a short text (anywhere from 300 to 1000 words) from 
@@ -12,49 +14,55 @@ DATA1100 Technology and Society for Programmers or other subject you have comple
 (Or write a new, short text.)
 
 Add images (if there are none). Remember that in Norwegian copyright law, 
-photographer must always be included. (May be organisation, e.g."Photo: Scanpix", 
+photographer must always be included. (Might be organisation, e.g."Photo: Scanpix",
 can be in the code, hence invisible on the page itself.)
 
 Add headings (if there are none).
 
 Add links (if there are none). This text should have multiple links to external 
 sites with relevant information. We shall not grade you on how relevant the 
-information you link to is, but we expect several links and we expect it to be easy 
+information you link to is, but we expect several links, and we expect it to be easy
 to understand before clicking what information you lead us to.
 
 If you wish to show off some skills, but found that difficult with the other pages, 
 you can make this (or another) page different from the others, with a distinct 
 visual of functional identity. -->
 
-    <body class="topical-body">
-    <header class="header-grid">
-        <div class="header-left">
-            <p class="header-text">
-                Topical
-            </p>
-        </div>
-        <div class="header-right">
-            <div class="header-text">
-                <div class="dropdown">
-                    <button class="dropdown-button"><i class="fa fa-bars"></i> Meny</button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Index</a>
-                        <a href="accessibility.html">Accessibility</a>
-                        <a href="topical.html">Topical</a>
-                        <a href="ymse1.html">Ymse1</a>
-                        <a href="ymse2.html">Ymse2</a>
-                    </div>
+<body class="topical-body">
+<header class="header-grid">
+    <div class="header-left">
+        <p class="header-text">
+            P35
+        </p>
+    </div>
+    <div class="header-right">
+        <div class="header-text">
+            <div class="dropdown">
+                <button class="dropdown-button"> ☰ Meny</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Hovedside</a>
+                    <a href="points-of-interest.html">Viktige steder</a>
+                    <a href="kantina.html">Kantina</a>
+                    <a href="topical.html">Tankian</a>
+                    <a href="accessibility.html">Tilgjengelighet</a>
                 </div>
             </div>
         </div>
-    </header>
-
+    </div>
+</header>
     <main class="wrapper">
-        <article class="main-box">
+        <section class="top-box">
             <h1>
                 Tengel = Tankian?
             </h1>
-            <p>
+            <p class="subtitle">
+                Ikke alle er hvem du tror de er
+            </p>
+        </section>
+
+        <section class="main-center-box">
+
+            <p class="topical-paragraph">
                 Har noen noensinne sett Tengel og Tankian i samme rom samtidig?
                 Det burde være klinkende klart for alle at grunnen til at
                 System Of A Down ikke har gitt ut musikk på mange år er at frontfigur
@@ -64,68 +72,39 @@ visual of functional identity. -->
                 med å gi ut enda mer musikk, men vi er glade for at vi har fått en god
                 lærer i "Tengel".
             </p>
-            <h2>
+
+            <h2 class="topical-h2">
                 Videobevis
             </h2>
-            <video controls width="400">
-                <source src="media/video/tankian tengel.mp4" type="video/mp4"/>
 
+            <div class="videobox">
+            <video controls width="500 rem" poster="media/images/tankianpic.png">
+                <source src="media/video/tankian-tengel.webm" type="video/webm"/>
+                <source src="media/video/tankian-tengel.mp4" type="video/mp4"/>
+                Last ned
+                <a href="media/video/tankian-tengel.webm">WEBM</a>
+                or
+                <a href="media/video/tankian-tengel.mp4">MP4</a>
+                video.
             </video>
+            </div>
 
-                <p>
-                    The smoking gun.
-                </p>
-                <p>
-                Det første avsnittet til hoveddelen fsfd
-                sdf
-                fsfdfdsfdsdffsd
-                fsfdfdsfdsdffsdsdfsdf
-                dsfsdfsd
-                fsfdfdsfdsdffsdfdsfsd
-                sdfsdfsd
-                sdfsfsdfds
-                sdfsdffsdfdsfdsfds
-                sdffdssfdsdffsdsdf
-            </p>
-            <h3>
-                Overskrift nummer 3
-            </h3>
-            <p>
-                Det første avsnittet til hoveddelen fsfd
-                sdf
-                fsfdfdsfdsdffsd
-                fsfdfdsfdsdffsdsdfsdf
-                dsfsdfsd
-                fsfdfdsfdsdffsdfdsfsd
-                sdfsdfsd
-                sdfsfsdfds
-                sdfsdffsdfdsfdsfds
-                sdffdssfdsdffsdsdf
-            </p>
-            <!-- PLACEHOLDER bilde
-            <figure>
-                <picture>
-                    <img src="media/images/oslomet-logo-transparent.webp" alt="OsloMet transparent logo">
-                    <source media="(min-width:800px)" srcset=".media/PATH-800px.webp">
-                    <source media="(min-width:500px)" srcset=".media/PATH-500px.WebP">
-                </picture>
-                <figcaption>
-                    <div class="caption-text">
-                        Et bilde av OsloMet sin logo.
-                    </div>
-                    <div class="credit">
-                        Photo source: <a href="https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_OsloMet.ai.info">foto.oslomet.no</a>
-                    </div>
-                </figcaption>
-            </figure>
-             -->
-        </article>
+        </section>
     </main>
 
-    <footer>
-        <p class="footer-text">
-            Forfattere: balin6546 & thlon2720 & kerem9811
-        </p>
+    <footer class="footer-grid">
+        <div class="footer-main-box">
+            <section class="footer-text">
+                <h2>
+                    Bidragsytere:
+                </h2>
+                <ul>
+                    <li>kerem9811</li>
+                    <li>thlon2720</li>
+                    <li>balin6546</li>
+                </ul>
+            </section>
+        </div>
     </footer>
     </body>
 </html>
