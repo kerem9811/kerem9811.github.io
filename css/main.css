@@ -1,10 +1,10 @@
 /*Fargedefinisjoner --------------------------------------------------------------- ----*/
 :root {
-  --primary-color: #ee9b3d;
-  --bg-color-body: #eaeaea;
+  --primary-color: #628182;
+  --bg-color-body: antiquewhite;
   --bg-color-boxes-center: whitesmoke;
-  --bg-color-boxes-left: #abbbbb;
-  --bg-color-boxes-right: #abbbbb;
+  --bg-color-boxes-left: #eac69d;
+  --bg-color-boxes-right: #b8e1ad;
   --darken: rgba(0,0,0,0.1);
 }
 
@@ -20,30 +20,23 @@ body {
 
 /* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
-  background-image: url("../media/images/tankian.webp");
-  /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
-  background-position: left;
-  background-size: 20%;
-  background-repeat: repeat;
-  align-content: normal;
-  background-color: #90019a;
-}
-.topical-center-box{
-  background-image: url("../media/images/tankian.webp");
-  background-position: top;
-  background-size: contain;
-  align-content: center;
+    background-image: url("../media/images/tankian.webp");
+    background-position: center;
+    background-size: auto;
+    align-content: center;
 }
 .videobox {
   max-width: 60vw;
   align-content: center;
 }
-.topical-paragraph {
-  padding-left: 20px;
-  padding-right: 20px;
+.topical-paragraph{
+  padding-left: 50px;
   background-color: cadetblue;
+  width: 50vw;
 }
-
+.topical-h2{
+  padding-left: 50px;
+}
 /* SEMantic elements - headings osv osv ------------------------------------------------------*/
 h1{
   font-size: 3em;
@@ -55,32 +48,12 @@ h2{
   font-size: 1.4em;
 }
 
-h3{
-  margin-top: 2rem;
-}
-
-p,ul{
-  line-height: 1.5rem;
-  margin-bottom: 2em;
-}
-
-a{
-  color: black;
-}
-
-.home-link{
-  display: block;
-  margin: 1em;
-}
-
 .subtitle{
   font-weight: bolder;
   margin-right: 38vw;
   padding-bottom: 20px;
 }
 
-/*LINKFORMATERING -----------------------------------------------------------------------------*/
-/* n\a */
 /*HEADER VISUELT -------------------------------------------------------------------------------*/
 
 header {
@@ -106,7 +79,8 @@ footer {
   background-color: var(--primary-color);
   width: 100%;
   padding-top: 0.5rem;
-  padding-bottom: 2rem;
+  bottom: 0;
+  margin-bottom: 0;
   /*box-shadow: 0 50vh 0 50vh var(--primary-color);*/
   font-weight: bold;
 }
@@ -143,9 +117,9 @@ footer {
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown{
-  position: absolute;
+  position: sticky;
   display: inline-block;
-  right: 0;
+  width: 75%;
 }
 
 .dropdown-button{
@@ -164,9 +138,7 @@ footer {
   display: none;
   position: sticky;
   background-color: var(--primary-color);
-  min-width: 19.8vw;
-  max-width: 100%;
-  overflow: hidden;
+  right: 0;
 }
 
 /* Links inside the dropdown */
@@ -186,3 +158,166 @@ footer {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
+/*Grid settings -----------------------------------------------------------------------------------*/
+/*HOVEDGRID  CONTAINER-----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 801px) {
+  .image-container{
+    min-height: 100%;
+    max-height: 300px;
+  }
+  .wrapper {
+    display: grid;
+    /*grid-template-columns: minmax(10px, 20%) minmax(30%, 400px) minmax(30%, 400px) minmax(10px, 20%) 0;*/
+    grid-template-columns: 20% 30% 30% 20% 0;
+    grid-template-rows: auto;
+  }
+  /*ØVERSTE BOKS, PSEUDO-HEADER_________________________________________________________________________*/
+  .top-box {
+    grid-column: 1 / 5;
+    background-color: var(--primary-color);
+    padding-left: 60px;
+    padding-bottom: 10px;
+  }
+  /*BOKSER BRUKT TIL PAGE CONTENT-----------------------------------------------------------------------*/
+  .main-center-box {
+    background-color: var(--bg-color-boxes-center);
+    grid-column: 2 / 4;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 20px;
+    height: fit-content;
+  }
+  .main-center-img-box {
+    grid-column: 2 / 4;
+    line-height: 0;
+  }
+  .main-left-text-box {
+    grid-column: 1 / 3;
+    background-color: var(--bg-color-boxes-left);
+    padding-left: 10vw;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    max-height: fit-content;
+  }
+  .main-right-text-box {
+    grid-column: 3 / 5;
+    background-color: var(--bg-color-boxes-right);
+    padding-left: 1.5rem;
+    padding-right: 10vw;
+    padding-bottom: 2rem;
+    max-height: fit-content;
+  }
+  .main-left-img-box {
+    grid-column: 1 / 3;
+    text-align: right;
+    line-height: 0;
+  }
+  .main-right-img-box {
+    grid-column: 3 / 5;
+    text-align: left;
+    line-height: 0;
+  }
+  /*HEADER GRID CONTAINER-------------------------------------------------------------------------------*/
+  .header-grid {
+    display: grid;
+    grid-template-columns: 50% 50% 0;
+    grid-template-rows: auto;
+  }
+  /*HEADER BOXES----------------------------------------------------*/
+  .header-left {
+    grid-column: 1 / 2;
+  }
+  .header-right {
+    grid-column: 2 / 3;
+    text-align: right;
+  }
+  /*FOOTER GRID CONTAINER ---------------------------------------------------------------------------------------*/
+  .footer-grid {
+      display: grid;
+      grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
+      grid-template-rows: auto;
+  }
+  /*FOOTER BOXES---------------------------------------------------*/
+  .footer-main-box{
+    grid-column: 2 / 4;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 800px){
+  .image-container{
+    max-height: 50vh;
+  }
+  .main-center-box .top-box .main-left-text-box .main-left-img-box .main-right-text-box .main-right-img-box {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+  /*ØVERSTE BOKS, PSEUDO-HEADER_________________________________________________________________________*/
+  .top-box {
+    padding-top: 1px;
+    padding-bottom: 2vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: var(--primary-color);
+  }
+  /*BOKSER BRUKT TIL PAGE CONTENT-----------------------------------------------------------------------*/
+  .main-center-box {
+    background-color: var(--bg-color-boxes-center);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .main-left-text-box {
+    background-color: var(--bg-color-boxes-left);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    min-height: 150px;
+    max-height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .main-right-text-box {
+    background-color: var(--bg-color-boxes-right);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    min-height: 150px;
+    max-height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .main-left-img-box {
+    text-align: right;
+    line-height: 0;
+  }
+  .main-right-img-box {
+    text-align: left;
+    line-height: 0;
+  }
+  .header-grid {
+    display: grid;
+    grid-template-columns: 50% 50% 0;
+    grid-template-rows: auto;
+  }
+  /*HEADER BOXES----------------------------------------------------*/
+  .header-left {
+    grid-column: 1 / 2;
+  }
+  .header-right {
+    grid-column: 2 / 3;
+    text-align: right;
+  }
+  /*FOOTER GRID CONTAINER ---------------------------------------------------------------------------------------*/
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
+    grid-template-rows: auto;
+  }
+  /*FOOTER BOXES---------------------------------------------------*/
+  .footer-main-box{
+    grid-column: 2 / 4;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
