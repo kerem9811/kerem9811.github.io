@@ -136,9 +136,9 @@ footer {
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown{
-  position: sticky;
+  position: absolute;
   display: inline-block;
-  width: 75%;
+  right: 0;
 }
 
 .dropdown-button{
@@ -157,7 +157,9 @@ footer {
   display: none;
   position: sticky;
   background-color: var(--primary-color);
-  right: 0;
+  min-width: 19.8vw;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* Links inside the dropdown */
