@@ -25,7 +25,7 @@ body {
 
 /* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
-  background-image: url("../media/images/tankianpic.webp");
+  background-image: url("../media/images/tankian-concert.webp");
   /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
   background-position: left;
   background-size: 20%;
@@ -34,7 +34,7 @@ body {
   background-color: #90019a;
 }
 .topical-center-box{
-  background-image: url("../media/images/tankianpic.webp");
+  background-image: url("../media/images/tankian-concert.webp");
   background-position: top;
   background-size: contain;
   align-content: center;
@@ -150,13 +150,9 @@ footer {
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown{
-  position: sticky;
+  position: absolute;
   display: inline-block;
-  width: 75%;
-
-    position: absolute;
-    display: inline-block;
-    right: 0;
+  right: 0;
 }
 
 .dropdown-button{
@@ -170,7 +166,7 @@ footer {
   padding-left: 20px;
 }
 
-/* Dropdown innhold (skjult som standard) */
+/* Dropdown innhold (skjult som standard) --------------------------------------*/
 .dropdown-content {
   display: none;
   position: sticky;
@@ -180,7 +176,7 @@ footer {
   overflow: hidden;
 }
 
-/* Links inside the dropdown */
+/* Linker inni dropdown -------------------------------------------------------*/
 .dropdown-content a {
   color: black;
   padding: 12px 20px;
