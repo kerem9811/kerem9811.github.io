@@ -26,7 +26,6 @@ body {
 /* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
   background-image: url("../media/images/tankianmorph.gif");
-  /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
   background-position: left;
   background-size: 20%;
   background-repeat: repeat;
@@ -35,6 +34,7 @@ body {
 }
 .topical-center-box{
   background-image: url("../media/images/tankian-concert.webp");
+  /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
   background-position: top;
   background-size: contain;
   align-content: center;
