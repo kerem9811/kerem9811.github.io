@@ -48,7 +48,9 @@ body {
   padding-right: 20px;
   background-color: cadetblue;
 }
-
+.topical-h2{
+  padding-left: 50px;
+}
 /* SEMantic elements - headings osv osv ------------------------------------------------------*/
 h1{
   font-size: 3em;
@@ -148,9 +150,13 @@ footer {
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown{
-  position: absolute;
+  position: sticky;
   display: inline-block;
-  right: 0;
+  width: 75%;
+
+    position: absolute;
+    display: inline-block;
+    right: 0;
 }
 
 .dropdown-button{
