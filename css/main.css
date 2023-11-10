@@ -1,6 +1,6 @@
 /*Fargedefinisjoner --------------------------------------------------------------- ----*/
 :root {
-  --primary-color: #e39733;
+  --primary-color: #ee9b3d;
   --bg-color-body: #eaeaea;
   --bg-color-boxes-center: whitesmoke;
   --bg-color-boxes-left: #abbbbb;
@@ -20,23 +20,30 @@ body {
 
 /* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
-    background-image: url("../media/images/tankian.webp");
-    background-position: center;
-    background-size: auto;
-    align-content: center;
+  background-image: url("../media/images/tankian.webp");
+  /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
+  background-position: left;
+  background-size: 20%;
+  background-repeat: repeat;
+  align-content: normal;
+  background-color: #90019a;
+}
+.topical-center-box{
+  background-image: url("../media/images/tankian.webp");
+  background-position: top;
+  background-size: contain;
+  align-content: center;
 }
 .videobox {
   max-width: 60vw;
   align-content: center;
 }
-.topical-paragraph{
-  padding-left: 50px;
+.topical-paragraph {
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: cadetblue;
-  width: 50vw;
 }
-.topical-h2{
-  padding-left: 50px;
-}
+
 /* SEMantic elements - headings osv osv ------------------------------------------------------*/
 h1{
   font-size: 3em;
@@ -73,7 +80,7 @@ a{
 }
 
 /*LINKFORMATERING -----------------------------------------------------------------------------*/
-
+/* n\a */
 /*HEADER VISUELT -------------------------------------------------------------------------------*/
 
 header {
