@@ -1,3 +1,8 @@
+/*
+Vi bestemte oss for å separere ut grid- og skaleringsdelen av main.css for enklere navigasjon og arbeidsflyt,
+iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved behov og med hensikt.
+*/
+
 /*Fargedefinisjoner --------------------------------------------------------------- ----*/
 :root {
   --primary-color: #ee9b3d;
@@ -20,7 +25,7 @@ body {
 
 /* Egen formatering til topical-siden sin body ---------------------------------------------*/
 .topical-body{
-  background-image: url("../media/images/tankian.webp");
+  background-image: url("../media/images/tankianpic.webp");
   /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
   background-position: left;
   background-size: 20%;
@@ -29,7 +34,7 @@ body {
   background-color: #90019a;
 }
 .topical-center-box{
-  background-image: url("../media/images/tankian.webp");
+  background-image: url("../media/images/tankianpic.webp");
   background-position: top;
   background-size: contain;
   align-content: center;
