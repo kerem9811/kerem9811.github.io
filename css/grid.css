@@ -125,8 +125,8 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
     }
     .main-center-box-topical {
         background-color: var(--bg-color-boxes-center-topical);
-        padding-left: 8vw;
-        padding-right: 8vw;
+        /*padding-left: 3rem;*/
+        /*padding-right: 3rem;*/
         padding-top: 20px;
         padding-bottom: 20px;
     }
