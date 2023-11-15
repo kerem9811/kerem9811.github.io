@@ -9,13 +9,6 @@
     <link rel="stylesheet" type="text/css" href="./css/grid.css">
     <title>Data 1200 - Webutvikling og inkluderende design - H23 -  Eksamen - Gruppe 96</title>
 </head>
-<!-- Short presentation of accessibility for your site.
-        Test your site with an automated test. Write a very short text
-        (about 400-500 words) about how you tested the code for accessibility
-        using this automated test. Tell us how you checked, and coding choices
-        you made for universal design beyond what an automated test could tell you.
-        You are recommended to use screenshots from the testing site and of your
-        code – lack of images may affect your score. -->
 <body>
 <header class="header-grid">
     <div class="header-left">
@@ -24,7 +17,7 @@
     <div class="header-right">
         <div class="header-text">
             <div class="dropdown">
-                <button class="dropdown-button"> ☰ Meny</button>
+                <button class="dropdown-button" type="button" value="hover meny"> ☰ Meny</button>
                 <nav class="dropdown-content">
                     <a href="index.html">Hovedside</a>
                     <a href="points-of-interest.html">Viktige steder</a>
@@ -50,39 +43,57 @@
             Tester av tilgjengelighet og hensyn vi har tatt
         </h2>
         <p>
-            Her er en del vi kan skrive om tester. Vi har for eksempel gjort testen Lighthouse av desktop og mobil
-            versjonen, og testet alle sidene. Alle har bestått med glans. Vi har gjort flere andre automatiske tester
-            for å grundig undersøke tilgjengeligheten. Blant annet har vi testet tekst og farge-kontrast, og også denne
-            testen har vi bestått. Det har vært veldig lærerikt å måtte ta mange hensyn på tilgjengelighet, for da får
-            man et annet bilde på sitt eget arbeid.
+            Tester av tilgjengelighet har vi gjort kontinuerlig underveis for å prøve å holde oss innenfor retningslinjene.
+            De problemene som har dukket opp underveis har vi adressert og forsøkt å undersøke og fikse. Vi har fulgt
+            <a href="https://www.w3schools.com/accessibility/" title="Retningslinjer for tilgjengelighet">
+            W3 Schools sine Accessibility Guidelines</a> så mye som mulig.
+            Primært har vi brukt <a href="https://developer.chrome.com/docs/lighthouse/overview/"
+            title="Informasjon om Lighthouse">Lighthouse i Chrome,</a> for å teste tilgjengelighet. Dette fordi den er lett
+            tilgjengelig og er enkel å skjønne. Testene har blitt gjort ved å committe til Github pages, slik at det har blitt
+            en offentlig nettside. Vi har i tillegg kjørt Lighthouse via Chrome utviklerverktøy på localhost. Vi har kjørt tester på
+            alle sider, både mobil og desktop, og alle får nå samme gode score.
         </p>
         <picture>
-<!--            <source srcset="media/images/p35inngang-w900.webp" media="(max-width:900px)">-->
-<!--            <source srcset="media/images/p35inngang-w800.webp" media="(max-width:800px)">-->
-<!--            <source srcset="media/images/p35inngang-w700.webp" media="(max-width:700px)">-->
-<!--            <source srcset="media/images/p35inngang-w600.webp" media="(max-width:600px)">-->
-<!--            <source srcset="media/images/p35inngang-w500.webp" media="(max-width:500px)">-->
-<!--            <source srcset="media/images/p35inngang-w400.webp" media="(max-width:400px)">-->
-            <img class="image-container-center" src="media/images/tilgjengelighet.png" alt="Bilde av en gjennomført
-            tilgjengelighets-test"
-                 width="1327" height="686">
+            <source srcset="media/images/tilgjengelighet800.webp" media="(max-width:800px)">
+            <img class="image-container-center" src="media/images/tilgjengelighet.webp" alt="En gjennomført
+            tilgjengelighets-test i Lighthouse"
+                 width="1000" height="517">
         </picture>
         <h2>
-            Enda en overskrift
+            Test av fargekontrast
         </h2>
         <p>
-            Litt mer info om flere tester vi har gjennomført og under kommer et bilde som viser denne testen.
+            For å være på den sikre siden har vi også gjennomført en test av fargekontraster på nettsiden. Vi har endret farger underveis,
+            både med tanke på design, men også med tanke på tilgjengelighet. Det er viktig at kontrasten er god, sånn at teksten er godt synlig.
+            Ifølge WCAG AAA standard skal <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html"
+            title="Retningslinjer for tekst-kontrast">kontrast på tekst skal være 7:1.</a>  Den ene fargen vi bruker som bakgrunn har kontrasten
+            6.88:1, noe vi tenkte var godt nok, og var et design-hensyn vi gjorde.
         </p>
         <picture>
-            <!--            <source srcset="media/images/p35inngang-w900.webp" media="(max-width:900px)">-->
-            <!--            <source srcset="media/images/p35inngang-w800.webp" media="(max-width:800px)">-->
-            <!--            <source srcset="media/images/p35inngang-w700.webp" media="(max-width:700px)">-->
-            <!--            <source srcset="media/images/p35inngang-w600.webp" media="(max-width:600px)">-->
-            <!--            <source srcset="media/images/p35inngang-w500.webp" media="(max-width:500px)">-->
-            <!--            <source srcset="media/images/p35inngang-w400.webp" media="(max-width:400px)">-->
-            <img class="image-container-center" src="media/images/tilgjengelighet.png" alt="Bilde av en gjennomført
-            tilgjengelighets-test"
-                 width="1327" height="686">
+            <source srcset="media/images/colorcontrast800.webp" media="(max-width:800px)">
+            <img class="image-container-center" src="media/images/colorcontrast.webp" alt="Gjennomført
+            tilgjengelighets-test av fargekontraster på nettsiden"
+                 width="1000" height="575">
+        </picture>
+        <h2>
+            Utfyllende tester og hensyn
+        </h2>
+        <p>
+            Vi har hatt, som det ble oppfordret til, hatt mobil-fokus først og har hatt et ønske om nettsiden skal oppføre seg
+            bra på mobil. Vi har forsøkt å ta i bruk så mange relevante semantiske elementer som mulig. Vi har gått gjennom
+            forelesninger, sett på sensor-veiledningen og prøvd å bruke best practice på alle deler av design og koding. Vi har
+            også brukt skjermleser-verktøy for å faktisk kunne sjekke at nettsiden henger på greip for noen som ikke klarer å se den
+            så godt, og har endret kode underveis for å forbedre den. Vi har gjort flere andre automatiske tester for å grundig undersøke
+            tilgjengeligheten. I tillegg til de automatiske testene Lighthouse gjør, kommer den med forslag til tester man må gjøre manuelt. Disse
+            har vi gjort og prøvd å oppfylle kravene til. Et element som potensielt er problematisk er gif-en på topical-siden.
+            Denne har, i forhold til andre elementer, et større avtrykk med tanke på filstørrelse og nettverksbelastning, men på grunn
+            av design-hensyn har vi valgt å beholde den som den er. Det har vært veldig lærerikt å ha et fokus på tilgjengelighet, både med
+            tanke på å lære HTML, CSS og best practice, men også med tanke på å forsøke å innta en annens perspektiv.
+        </p>
+        <picture>
+            <source srcset="media/images/additionaltests800.webp" media="(max-width:800px)">
+            <img class="image-container-center" src="media/images/additionaltests.webp" alt="Forslag til utfyllende tilgjengelighets-
+            hensyn" width="1000" height="693">
         </picture>
     </section>
 
