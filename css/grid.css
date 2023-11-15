@@ -34,7 +34,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         padding-bottom: 20px;
     }
     .main-center-box-topical {
-        background-color: var(--bg-color-boxes-center);
+        background-color: var(--bg-color-boxes-center-topical);
         padding-left: 8vw;
         padding-right: 8vw;
         padding-top: 20px;
@@ -121,7 +121,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         height: fit-content;
     }
     .main-center-box-topical {
-        background-color: var(--bg-color-boxes-center);
+        background-color: var(--bg-color-boxes-center-topical);
         padding-left: 8vw;
         padding-right: 8vw;
         padding-top: 20px;
