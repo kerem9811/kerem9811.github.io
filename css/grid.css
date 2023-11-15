@@ -9,6 +9,9 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
 
 /* FOR SKJERMBREDDE 800PX OG UNDER, FLEX VIEW  ------------------------------------------------------------*/
 @media screen and (max-width: 800px){
+    .background-image{
+        visibility: hidden;
+    }
     .image-container{
         max-height: 50vh;
     }
