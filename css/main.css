@@ -10,6 +10,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
   --bg-color-boxes-center: whitesmoke;
   --bg-color-boxes-left: #abbbbb;
   --bg-color-boxes-right: #abbbbb;
+  --bg-color-boxes-center-topical: rgb(187, 70, 217);
   --darken: rgba(0,0,0,0.1);
 }
 
@@ -33,28 +34,26 @@ Gif-en er laget av kerem9811 */
   background-size: 20%;
   background-repeat: repeat;
   align-content: normal;
-  background-color: #90019a;
+  background-color: var(--bg-color-boxes-center-topical)
 }
 .topical-center-box{
-  background-image: url("../media/images/tankian-concert.webp");
-  /* Bildekilde: https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg*/
   background-position: top;
   background-size: contain;
   align-content: center;
+  background-color: var(--bg-color-boxes-center-topical);
 }
 .videobox {
   max-width: 60vw;
-  align-content: center;
 }
 .topical-paragraph {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: cadetblue;
+  background-color: var(--bg-color-boxes-center-topical);
 }
 .topical-heading{
   padding-left: 20px;
   padding-right: 20px;
-  background-color: cadetblue;
+  background-color: var(--bg-color-boxes-center-topical);
 }
 /* SEMantic elements - headings osv osv ------------------------------------------------------*/
 h1{
@@ -148,6 +147,13 @@ footer {
   overflow: hidden;
   width: 100%;
   object-fit: cover;
+}
+
+.image-container-low-opacity{
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.1;
 }
 
 
