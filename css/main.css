@@ -1,11 +1,11 @@
 /*
-Vi bestemte oss for å separere ut grid- og skaleringsdelen av main.css for enklere navigasjon og arbeidsflyt,
+Vi bestemte oss for å separere ut grid- og hoveddelen av main.css for enklere navigasjon og arbeidsflyt,
 iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved behov og med hensikt.
 */
 
 /*Fargedefinisjoner --------------------------------------------------------------- ----*/
 :root {
-  --primary-color: #ee9b3d;
+  --primary-color: #84b6b6;
   --bg-color-body: #eaeaea;
   --bg-color-boxes-center: whitesmoke;
   --bg-color-boxes-left: #abbbbb;
@@ -24,7 +24,7 @@ body {
   padding: 0;
 }
 
-/* Egen formatering til topical-siden sin body ---------------------------------------------*/
+/* Egen formatering til topical-siden  ------------------------------------------------------*/
 .topical-body{
   background-image: url("../media/images/tankianmorph.gif");
   /* Kilder: https://commons.wikimedia.org/wiki/File:Serj_Tankian_2006_(cropped).jpg
@@ -46,8 +46,6 @@ Gif-en er laget av kerem9811 */
   max-width: 60vw;
 }
 .topical-paragraph {
-  /*padding-left: 20px;*/
-  /*padding-right: 20px;*/
   background-color: var(--bg-color-boxes-center-topical);
 }
 .topical-heading{
@@ -55,35 +53,32 @@ Gif-en er laget av kerem9811 */
   /*padding-right: 20px;*/
   background-color: var(--bg-color-boxes-center-topical);
 }
-/* SEMantic elements - headings osv osv ------------------------------------------------------*/
+/* Semantic elements - headings osv osv ------------------------------------------------------*/
+main {
+  width: 100%;
+}
 h1{
   font-size: 3em;
   margin-right: 38vw;
 }
-
 h2{
   padding-top: 1rem;
   font-size: 1.4em;
 }
-
 h3{
   margin-top: 2rem;
 }
-
 p,ul{
   line-height: 1.5rem;
   margin-bottom: 2em;
 }
-
 a{
   color: black;
 }
-
 .home-link{
   display: block;
   margin: 1em;
 }
-
 .subtitle{
   font-weight: bolder;
   margin-right: 38vw;
@@ -91,7 +86,9 @@ a{
 }
 
 /*LINKFORMATERING -----------------------------------------------------------------------------*/
-/* n\a */
+
+/* VI MÅ AVGJØRE HVORVIDT LINKENE SKAL VÆRE VANLIGE!! */
+
 /*HEADER VISUELT -------------------------------------------------------------------------------*/
 
 header {
@@ -103,38 +100,40 @@ header {
   padding-top: 0;
   top: 0;
 }
-
 .header-text {
   padding-left: 1rem;
   /*font-weight: bold;*/
 }
 
-main {
-  width: 100%;
-}
 /*FOOTER VISUELT --------------------------------------------------------------------------------*/
 footer {
   background-color: var(--primary-color);
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
-  /*box-shadow: 0 50vh 0 50vh var(--primary-color);*/
   font-weight: bold;
 }
 .footer-text{
   padding-left: 1rem;
 }
-/*
-.background-image-text{
-  font-size: 0.8rem;
-  color: var(--primary-color);
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: bottom;
-}*/
 
 /*BILDEKONTAINER - SKALERER BILDE TIL GRID BOX --------------------------------------------------*/
+@media screen and (max-width: 800px){
+  /* Passe maks høyde på bilder på mobil */
+  .image-container{
+    max-height: 50vh;
+  }
+  /* Skjuler bakgrunnsbildet i mobil-view */
+  .background-image{
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 801px) {
+  .image-container{
+    min-height: 100%;
+    max-height: 300px;
+  }
+}
 
 .image-container-center{
   overflow: hidden;

@@ -1,7 +1,7 @@
 /*Grid settings -----------------------------------------------------------------------------------*/
 
 /*
-Vi bestemte oss for å separere ut grid- og skaleringsdelen av main.css for enklere navigasjon og arbeidsflyt,
+Vi bestemte oss for å separere ut grid- og hoveddelen av main.css for enklere navigasjon og arbeidsflyt,
 iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved behov og med hensikt.
 */
 
@@ -9,12 +9,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
 
 /* FOR SKJERMBREDDE 800PX OG UNDER, FLEX VIEW  ------------------------------------------------------------*/
 @media screen and (max-width: 800px){
-    .background-image{
-        visibility: hidden;
-    }
-    .image-container{
-        max-height: 50vh;
-    }
+    /* Flex view ved skjermbredde 800px og under */
     .main-center-box .main-center-box-topical .top-box .main-left-text-box .main-left-img-box .main-right-text-box .main-right-img-box {
         display: flex;
         align-items: flex-end;
@@ -28,7 +23,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         padding-right: 8vw;
         background-color: var(--primary-color);
     }
-    /*BOKSER BRUKT TIL PAGE CONTENT-----------------------------------------------------------------------*/
+    /*BOKSER BRUKT TIL SIDEINNHOLD -----------------------------------------------------------------------*/
     .main-center-box {
         background-color: var(--bg-color-boxes-center);
         padding-left: 8vw;
@@ -38,10 +33,6 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
     }
     .main-center-box-topical {
         background-color: var(--bg-color-boxes-center-topical);
-        padding-left: 8vw;
-        padding-right: 8vw;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
     .main-left-text-box {
         background-color: var(--bg-color-boxes-left);
@@ -69,12 +60,12 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         text-align: left;
         line-height: 0;
     }
+    /*HEADER BOKSER----------------------------------------------------*/
     .header-grid {
         display: grid;
         grid-template-columns: 50% 50% 0;
         grid-template-rows: auto;
     }
-    /*HEADER BOXES----------------------------------------------------*/
     .header-left {
         grid-column: 1 / 2;
     }
@@ -82,13 +73,12 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         grid-column: 2 / 3;
         text-align: right;
     }
-    /*FOOTER GRID CONTAINER ---------------------------------------------------------------------------------------*/
+    /*FOOTER GRID & BOKSER ---------------------------------------------------------------------------------------*/
     .footer-grid {
         display: grid;
         grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
         grid-template-rows: auto;
     }
-    /*FOOTER BOXES------------------------------------------------------------------------*/
     .footer-main-box{
         grid-column: 2 / 4;
         padding-top: 10px;
@@ -97,10 +87,6 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
 }
 /* FOR SKJERMBREDDE 801PX OG OVER, GRID VIEW  ------------------------------------------------------------*/
 @media screen and (min-width: 801px) {
-    .image-container{
-        min-height: 100%;
-        max-height: 300px;
-    }
     .wrapper {
         display: grid;
         /*grid-template-columns: minmax(10px, 20%) minmax(30%, 400px) minmax(30%, 400px) minmax(10px, 20%) 0;*/
@@ -125,10 +111,6 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
     }
     .main-center-box-topical {
         background-color: var(--bg-color-boxes-center-topical);
-        /*padding-left: 3rem;*/
-        /*padding-right: 3rem;*/
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
     .main-center-img-box {
         grid-column: 2 / 4;
@@ -160,13 +142,12 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         text-align: left;
         line-height: 0;
     }
-    /*HEADER GRID CONTAINER-------------------------------------------------------------------------------*/
+    /*HEADER GRID & BOKSER-------------------------------------------------------------------------------*/
     .header-grid {
         display: grid;
         grid-template-columns: 50% 50% 0;
         grid-template-rows: auto;
     }
-    /*HEADER BOXES----------------------------------------------------*/
     .header-left {
         grid-column: 1 / 2;
     }
@@ -174,13 +155,12 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         grid-column: 2 / 3;
         text-align: right;
     }
-    /*FOOTER GRID CONTAINER ---------------------------------------------------------------------------------------*/
+    /*FOOTER GRID & BOKSER ---------------------------------------------------------------------------------------*/
     .footer-grid {
         display: grid;
         grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
         grid-template-rows: auto;
     }
-    /*FOOTER BOXES---------------------------------------------------*/
     .footer-main-box{
         grid-column: 2 / 4;
         padding-bottom: 10px;
