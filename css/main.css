@@ -8,39 +8,85 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
   --primary-color: #84b6b6;
   --bg-color-body: #eaeaea;
   --bg-color-boxes-center: whitesmoke;
-  --bg-color-boxes-left: #abbbbb;
-  --bg-color-boxes-right: #abbbbb;
-  --bg-color-boxes-center-topical: #C67ED7;
+  --bg-color-boxes: #abbbbb;
+  --bg-color-topical: #C67ED7;
   --darken: rgba(0,0,0,0.1);
 }
 
-/*Generell formatering --------------------------------------------------------------------*/
+/*HEADER VISUELT -------------------------------------------------------------------------------*/
+header {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  font-weight: bold;
+  padding-top: 0;
+  top: 0;
+}
+.header-text {
+  padding-left: 1rem;
+  font-weight: bold;
+}
+/* DROPDOWN MENY I HEADER --------------------------------------------+++++--------------------*/
+/* https://www.w3schools.com/css/css_dropdowns.asp */
+/* Har brukt kilden over som inspirasjon og endret sånn at det passer oss */
+.dropdown{
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+.dropdown-button{
+  background-color: var(--primary-color);
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* Dropdown innhold (skjult som standard) -----------*/
+.dropdown-content {
+  display: none;
+  position: sticky;
+  background-color: var(--primary-color);
+  min-width: 19.8vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+/* Linker inni dropdown ------------------*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: left;
+}
+/* Bytte farge på linker når man "hovrer" over -------*/
+.dropdown-content a:hover {background-color: var(--darken);}
+/* Vise dropdown menyen når man "hovrer" over -------*/
+.dropdown:hover .dropdown-content {display: block;}
+
+/* BODY FORMATERING  -------------------------------------------------------------------------*/
 body {
-  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
   color: black;
   background-color: var(--bg-color-body);
-  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
-
-/* Egen formatering til topical-siden  ------------------------------------------------------*/
+/* TOPICAL SIDEN FORMATERING  ----------------------------------------------------------------*/
 .topical-body{
   background-image: url("../media/images/tankianpic.webp");
-  /* Kilder: https://commons.wikimedia.org/wiki/File:Serj_Tankian_2006_(cropped).jpg
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OrbqilOPgpiUWZRcnkY47hYtuVS5JsOwD9etBSn8lC5L-f8cDPrCh8ewSQGT8lWhVp4&usqp=CAU
-Gif-en er laget av kerem9811 */
+  /* Kilder: https://commons.wikimedia.org/wiki/File:Serj_Tankian_2006_(cropped).jpg */
   background-position: left;
   background-size: 20%;
   background-repeat: repeat;
   align-content: normal;
-  background-color: var(--bg-color-boxes-center-topical)
-}
-@media screen and (max-width: 800px){
-  /* Skjuler bakgrunnsbildet i mobil-view for en smoothere opplevelse*/
-  .background-image{
-    visibility: hidden;
-  }
+  background-color: var(--bg-color-topical)
 }
 video {
   width: 100%;
@@ -50,12 +96,83 @@ video {
   background-position: top;
   background-size: contain;
   align-content: center;
-  background-color: var(--bg-color-boxes-center-topical);
+  background-color: var(--bg-color-topical);
 }
 .topical-paragraph .topical-heading {
-  background-color: var(--bg-color-boxes-center-topical);
+  background-color: var(--bg-color-topical);
 }
-/* Semantic elements - headings osv osv ------------------------------------------------------*/
+
+/* FORMATERING VED MOBIL-VISNING, 800PX OG MINDRE-----------------------------------------------------*/
+@media screen and (max-width: 800px){
+  /* Øverste boks, pseudo-header ____________________________*/
+  .top-box {
+    padding-top: 1px;
+    padding-bottom: 2vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: var(--primary-color);
+  }
+  /* Bokser brukt til sideinnhold --------------------------*/
+  .main-center-box {
+    background-color: var(--bg-color-boxes-center);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .main-center-box-topical {
+    background-color: var(--bg-color-topical);
+  }
+  .main-left-text-box .main-right-text-box {
+    /*background-color: var(--bg-color-boxes);*/
+    /*padding-left: 8vw;*/
+    /*padding-right: 8vw;*/
+    /*min-height: 150px;*/
+    /*max-height: fit-content;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 30px;*/
+    background-color: var(--bg-color-boxes);
+    padding-left: 10vw;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    max-height: fit-content;
+  }
+}
+/* FORMATERING VED DESKTOP-VISNING, 801PX OG MER -------------------------------------------------------------- */
+@media screen and (min-width: 801px) {
+  /* Øverste boks, pseudo-header ____________________________*/
+  .top-box {
+    background-color: var(--primary-color);
+    padding-left: 60px;
+    padding-bottom: 10px;
+  }
+  /* Bokser brukt til sideinnhold --------------------------*/
+  .main-center-box {
+    background-color: var(--bg-color-boxes-center);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 20px;
+    height: fit-content;
+  }
+  .main-center-box-topical {
+    background-color: var(--bg-color-topical);
+  }
+  .main-left-text-box {
+    background-color: var(--bg-color-boxes);
+    padding-left: 10vw;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    max-height: fit-content;
+  }
+  .main-right-text-box {
+    background-color: var(--bg-color-boxes);
+    padding-left: 2rem;
+    padding-right: 10vw;
+    padding-bottom: 2rem;
+    max-height: fit-content;
+  }
+}
+/* SEMANTISKE ELEMENTER, HEADINGER, ETC. --------------------------------------------------------------*/
 main {
   width: 100%;
 }
@@ -74,52 +191,12 @@ p,ul{
   line-height: 1.5rem;
   margin-bottom: 2em;
 }
-a{
-  color: black;
-}
-.home-link{
-  display: block;
-  margin: 1em;
-}
 .subtitle{
   font-weight: bolder;
   margin-right: 38vw;
   padding-bottom: 20px;
 }
-
-/*LINKFORMATERING -----------------------------------------------------------------------------*/
-
-/* VI MÅ AVGJØRE HVORVIDT LINKENE SKAL VÆRE VANLIGE!! */
-
-/*HEADER VISUELT -------------------------------------------------------------------------------*/
-
-header {
-  background-color: var(--primary-color);
-  width: 100%;
-  height: 50px;
-  position: sticky;
-  font-weight: bold;
-  padding-top: 0;
-  top: 0;
-}
-.header-text {
-  padding-left: 1rem;
-  font-weight: bold;
-}
-
-/*FOOTER VISUELT --------------------------------------------------------------------------------*/
-footer {
-  background-color: var(--primary-color);
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 2rem;
-  font-weight: bold;
-}
-.footer-text{
-  padding-left: 1rem;
-}
-
-/*BILDEKONTAINER - SKALERER BILDE TIL GRID BOX --------------------------------------------------*/
+/* BILDEKONTAINER - BILDESKALERING     ------------------------------------------------------------*/
 @media screen and (max-width: 800px){
   /* Passe maks høyde på bilder på mobil */
   .image-container{
@@ -143,52 +220,48 @@ footer {
   width: 100%;
   object-fit: cover;
 }
-
-/* DROPDOWN MENY ----------------------------------------------------------------*/
-/* https://www.w3schools.com/css/css_dropdowns.asp */
-/* Har brukt kilden over som inspirasjon og endret sånn at det passer oss */
-
-.dropdown{
-  position: absolute;
-  display: inline-block;
-  right: 0;
+.image-container-accessibility{
+  object-fit: contain;
+  width: 100%;
 }
-
-.dropdown-button{
-  background-color: var(--primary-color);
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  height: 50px;
-  padding-right: 20px;
-  padding-left: 20px;
+#headsetimage{
+  object-fit: contain;
+  width: 100%;
+  /*max-height: 75vh;*/
 }
+/*LINKFORMATERING -----------------------------------------------------------------------------*/
 
-/* Dropdown innhold (skjult som standard) --------------------------------------*/
-.dropdown-content {
-  display: none;
-  position: sticky;
-  background-color: var(--primary-color);
-  min-width: 19.8vw;
-  max-width: 100%;
-  overflow: hidden;
+a{
+  font-size: 1.05rem;
+ }
+a:hover {
+  background-color: yellow;
+  font-size: 1.05rem;
 }
-
-/* Linker inni dropdown -------------------------------------------------------*/
-.dropdown-content a {
-  color: black;
-  padding: 12px 20px;
-  text-decoration: none;
+.home-link{
   display: block;
-  font-weight: bold;
-  font-size: 0.8em;
-  text-align: left;
+  margin: 1em;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: var(--darken);}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
+/*FOOTER VISUELT --------------------------------------------------------------------------------*/
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+.footer-text{
+  padding-left: 1rem;
+}
+@media screen and (max-width: 800px){
+  .footer-main-box{
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .footer-main-box{
+    padding-bottom: 10px;
+  }
+}
