@@ -10,7 +10,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
   --bg-color-boxes-center: whitesmoke;
   --bg-color-boxes-left: #abbbbb;
   --bg-color-boxes-right: #abbbbb;
-  --bg-color-boxes-center-topical: rgb(187, 70, 217);
+  --bg-color-boxes-center-topical: #C67ED7;
   --darken: rgba(0,0,0,0.1);
 }
 
@@ -26,7 +26,7 @@ body {
 
 /* Egen formatering til topical-siden  ------------------------------------------------------*/
 .topical-body{
-  background-image: url("../media/images/tankianmorph.gif");
+  background-image: url("../media/images/tankianpic.webp");
   /* Kilder: https://commons.wikimedia.org/wiki/File:Serj_Tankian_2006_(cropped).jpg
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OrbqilOPgpiUWZRcnkY47hYtuVS5JsOwD9etBSn8lC5L-f8cDPrCh8ewSQGT8lWhVp4&usqp=CAU
 Gif-en er laget av kerem9811 */
@@ -36,21 +36,23 @@ Gif-en er laget av kerem9811 */
   align-content: normal;
   background-color: var(--bg-color-boxes-center-topical)
 }
+@media screen and (max-width: 800px){
+  /* Skjuler bakgrunnsbildet i mobil-view for en smoothere opplevelse*/
+  .background-image{
+    visibility: hidden;
+  }
+}
+video {
+  width: 100%;
+  height: auto;
+}
 .topical-center-box{
   background-position: top;
   background-size: contain;
   align-content: center;
   background-color: var(--bg-color-boxes-center-topical);
 }
-.videobox {
-  max-width: 60vw;
-}
-.topical-paragraph {
-  background-color: var(--bg-color-boxes-center-topical);
-}
-.topical-heading{
-  /*padding-left: 20px;*/
-  /*padding-right: 20px;*/
+.topical-paragraph .topical-heading {
   background-color: var(--bg-color-boxes-center-topical);
 }
 /* Semantic elements - headings osv osv ------------------------------------------------------*/
@@ -102,7 +104,7 @@ header {
 }
 .header-text {
   padding-left: 1rem;
-  /*font-weight: bold;*/
+  font-weight: bold;
 }
 
 /*FOOTER VISUELT --------------------------------------------------------------------------------*/
@@ -123,10 +125,6 @@ footer {
   .image-container{
     max-height: 50vh;
   }
-  /* Skjuler bakgrunnsbildet i mobil-view */
-  .background-image{
-    visibility: hidden;
-  }
 }
 @media screen and (min-width: 801px) {
   .image-container{
@@ -134,30 +132,21 @@ footer {
     max-height: 300px;
   }
 }
-
 .image-container-center{
   overflow: hidden;
   width: 100%;
   max-height: 75vh;
   object-fit: cover;
 }
-
 .image-container{
   overflow: hidden;
   width: 100%;
   object-fit: cover;
 }
 
-.image-container-low-opacity{
-  overflow: hidden;
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.1;
-}
-
-
 /* DROPDOWN MENY ----------------------------------------------------------------*/
 /* https://www.w3schools.com/css/css_dropdowns.asp */
+/* Har brukt kilden over som inspirasjon og endret sånn at det passer oss */
 
 .dropdown{
   position: absolute;
