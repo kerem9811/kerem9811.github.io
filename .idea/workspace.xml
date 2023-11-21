@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1ab7b73-4d68-4e90-874b-06fb6972889c" name="Changes" comment="kommentert grid.css">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+    <list default="true" id="e1ab7b73-4d68-4e90-874b-06fb6972889c" name="Changes" comment="videoformatering">
+      <change beforePath="$PROJECT_DIR$/topical.html" beforeDir="false" afterPath="$PROJECT_DIR$/topical.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +348,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700568169957</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="done?">
+      <option name="closed" value="true" />
+      <created>1700569400969</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1700569400969</updated>
+    </task>
+    <task id="LOCAL-00033" summary="videoformatering">
+      <option name="closed" value="true" />
+      <created>1700570450432</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1700570450432</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +381,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/ken2" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -398,6 +413,8 @@
     <MESSAGE value="h1 mindre" />
     <MESSAGE value="fint formatert" />
     <MESSAGE value="kommentert grid.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="kommentert grid.css" />
+    <MESSAGE value="done?" />
+    <MESSAGE value="videoformatering" />
+    <option name="LAST_COMMIT_MESSAGE" value="videoformatering" />
   </component>
 </project>

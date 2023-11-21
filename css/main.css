@@ -103,10 +103,11 @@ body {
     background-color: var(--bg-color-topical)
 }
 
-/* Formatering av video */
+/* Formatering av video - høydebegrensing og midtstilling*/
 video {
-    width: 100%;
-    height: auto;
+    display: block;
+    max-height: 70vh;
+    margin: auto;
 }
 
 /* Formatering av sentrert boks med innhold */
