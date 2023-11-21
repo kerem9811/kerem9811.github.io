@@ -5,9 +5,10 @@ Vi bestemte oss for å separere ut grid- og hoveddelen av main.css for enklere n
 iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved behov og med hensikt.
 */
 
-/*HOVEDGRID  CONTAINER-----------------------------------------------------------------------------*/
-
 /* FOR SKJERMBREDDE 800PX OG UNDER, FLEX VIEW  ------------------------------------------------------------*/
+
+/* Ved skjermbredde <800 bytter hovedboksene til flex view og plasserer alt innhold i en kolonne for bedre lesbarhet
+ved smal skjerm og/eller høy zoom*/
 @media screen and (max-width: 800px) {
     .main-center-box .main-center-box-topical .top-box .main-left-text-box .main-left-img-box .main-right-text-box .main-right-img-box {
         display: flex;
@@ -15,7 +16,8 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         width: 100%;
     }
 
-    /*HEADER BOKSER----------------------------------------------------*/
+    /*HEADER/FOOTER BOKSER - Duplikat av formatering for >800px skjermbredde, noe som medfører litt bloat,
+    men da er det enkelt tilgjengelig for differensiert formatering dersom nødvendig*/
     .header-grid {
         display: grid;
         grid-template-columns: 50% 50% 0;
@@ -31,7 +33,6 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         text-align: right;
     }
 
-    /*FOOTER GRID & BOKSER ---------------------------------------------------------------------------------------*/
     .footer-grid {
         display: grid;
         grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
@@ -43,7 +44,14 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
     }
 }
 
-/* FOR SKJERMBREDDE 801PX OG OVER, GRID VIEW  ------------------------------------------------------------*/
+/* FOR SKJERMBREDDE 801PX OG OVER ------------------------------------------------------------------------ */
+
+/*Her er hovedboksene i grid for å legge til rette for "side om side" -plassering av
+innholdet. Denne griden er generell og tilpasset både midtstilt innhold og sideinnhold. Plassering
+i rader er avgjort av rekkefølgen i HTML, og boksene er derfor ikke tildelt rader, bare kolonner.
+Dette er for å unngå overdrevne mengder med forskjellige typer bokser, slik at man har noen få
+generelle bokser som kan brukes til alt innholdet.*/
+
 @media screen and (min-width: 801px) {
     .wrapper {
         display: grid;
@@ -82,7 +90,8 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         grid-column: 3 / 5;
     }
 
-    /*HEADER GRID & BOKSER-------------------------------------------------------------------------------*/
+    /*HEADER/FOOTER BOKSER - Duplikat av formatering for <800px skjermbredde, noe som medfører litt bloat,
+    men da er det enkelt tilgjengelig for differensiert formatering dersom nødvendig*/
     .header-grid {
         display: grid;
         grid-template-columns: 50% 50% 0;
@@ -98,7 +107,6 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
         text-align: right;
     }
 
-    /*FOOTER GRID & BOKSER ---------------------------------------------------------------------------------------*/
     .footer-grid {
         display: grid;
         grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
