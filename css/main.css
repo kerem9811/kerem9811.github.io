@@ -264,7 +264,7 @@ p, ul {
     width      : 100%;
     }
 
-#headsetimage {
+#glassesimage {
     object-fit : contain;
     width      : 100%;
     /*max-height: 75vh;*/
@@ -279,6 +279,10 @@ p, ul {
 .home-link {
     display : block;
     margin  : 1em;
+    }
+
+.in-text-link {
+    color: blue;
     }
 
 .in-text-link:hover {
