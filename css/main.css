@@ -8,7 +8,7 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
     --primary-color         : #84b6b6;
     --bg-color-body         : #eaeaea;
     --bg-color-boxes-center : whitesmoke;
-    --bg-color-boxes        : #abbbbb;
+    --bg-color-boxes        : #cfd7de;
     --bg-color-topical      : #C67ED7;
     --darken                : rgba(0, 0, 0, 0.1);
     }
@@ -267,19 +267,18 @@ p, ul {
 
 /*LINKFORMATERING -----------------------------------------------------------------------------*/
 
-a {
-    font-size : 1.05rem;
-    }
-
-a:hover {
-    background-color : yellow;
-    font-size        : 1.05rem;
-    }
+.clean-link, .home-link {
+    color: black;
+}
 
 .home-link {
     display : block;
     margin  : 1em;
-    }
+}
+
+.in-text-link:hover{
+    background-color : yellow;
+}
 
 /*FOOTER VISUELT --------------------------------------------------------------------------------*/
 footer {
