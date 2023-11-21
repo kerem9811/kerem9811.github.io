@@ -149,13 +149,6 @@ video {
     }
 
     .main-left-text-box .main-right-text-box {
-        /*background-color: var(--bg-color-boxes);*/
-        /*padding-left: 8vw;*/
-        /*padding-right: 8vw;*/
-        /*min-height: 150px;*/
-        /*max-height: fit-content;*/
-        /*padding-top: 20px;*/
-        /*padding-bottom: 30px;*/
         background-color: var(--bg-color-boxes);
         padding-left: 10vw;
         padding-right: 2rem;
@@ -170,7 +163,6 @@ video {
         padding-right: 20px;
     }
 }
-
 
 /* FORMATERING VED DESKTOP-VISNING, 801PX OG MER -------------------------------------------------------------- */
 @media screen and (min-width: 801px) {
@@ -217,7 +209,6 @@ video {
         padding-right: 20px;
     }
 }
-
 
 /* SEMANTISKE ELEMENTER, HEADINGER, ETC. --------------------------------------------------------------*/
 main {
@@ -285,7 +276,6 @@ p, ul {
 #glassesimage {
     object-fit: contain;
     width: 100%;
-    /*max-height: 75vh;*/
 }
 
 /*LINKFORMATERING -----------------------------------------------------------------------------*/
