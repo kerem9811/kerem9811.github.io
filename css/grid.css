@@ -9,40 +9,40 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
 
 /* Ved skjermbredde <800 bytter hovedboksene til flex view og plasserer alt innhold i en kolonne for bedre lesbarhet
 ved smal skjerm og/eller høy zoom*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width : 800px) {
     .main-center-box .main-center-box-topical .top-box .main-left-text-box .main-left-img-box .main-right-text-box .main-right-img-box {
-        display: flex;
-        align-items: flex-end;
-        width: 100%;
-    }
+        display     : flex;
+        align-items : flex-end;
+        width       : 100%;
+        }
 
     /*HEADER/FOOTER BOKSER - Duplikat av formatering for >800px skjermbredde, noe som medfører litt bloat,
     men da er det enkelt tilgjengelig for differensiert formatering dersom nødvendig*/
     .header-grid {
-        display: grid;
-        grid-template-columns: 50% 50% 0;
-        grid-template-rows: auto;
-    }
+        display               : grid;
+        grid-template-columns : 50% 50% 0;
+        grid-template-rows    : auto;
+        }
 
     .header-left {
-        grid-column: 1 / 2;
-    }
+        grid-column : 1 / 2;
+        }
 
     .header-right {
-        grid-column: 2 / 3;
-        text-align: right;
-    }
+        grid-column : 2 / 3;
+        text-align  : right;
+        }
 
     .footer-grid {
-        display: grid;
-        grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
-        grid-template-rows: auto;
-    }
+        display               : grid;
+        grid-template-columns : 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
+        grid-template-rows    : auto;
+        }
 
     .footer-main-box {
-        grid-column: 2 / 4;
+        grid-column : 2 / 4;
+        }
     }
-}
 
 /* FOR SKJERMBREDDE 801PX OG OVER ------------------------------------------------------------------------ */
 
@@ -52,68 +52,68 @@ i rader er avgjort av rekkefølgen i HTML, og boksene er derfor ikke tildelt rad
 Dette er for å unngå overdrevne mengder med forskjellige typer bokser, slik at man har noen få
 generelle bokser som kan brukes til alt innholdet.*/
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width : 801px) {
     .wrapper {
-        display: grid;
-        grid-template-columns: 20% 30% 30% 20% 0;
-        grid-template-rows: auto;
-    }
+        display               : grid;
+        grid-template-columns : 20% 30% 30% 20% 0;
+        grid-template-rows    : auto;
+        }
 
     /*ØVERSTE BOKS, PSEUDO-HEADER_________________________________________________________________________*/
     .top-box {
-        grid-column: 1 / 5;
-    }
+        grid-column : 1 / 5;
+        }
 
     /*BOKSER BRUKT TIL PAGE CONTENT-----------------------------------------------------------------------*/
     .main-center-box {
-        grid-column: 2 / 4;
-    }
+        grid-column : 2 / 4;
+        }
 
     .main-center-img-box {
-        grid-column: 2 / 4;
-        line-height: 0;
-    }
+        grid-column : 2 / 4;
+        line-height : 0;
+        }
 
     .main-left-text-box {
-        grid-column: 1 / 3;
-    }
+        grid-column : 1 / 3;
+        }
 
     .main-right-text-box {
-        grid-column: 3 / 5;
-    }
+        grid-column : 3 / 5;
+        }
 
     .main-left-img-box {
-        grid-column: 1 / 3;
-    }
+        grid-column : 1 / 3;
+        }
 
     .main-right-img-box {
-        grid-column: 3 / 5;
-    }
+        grid-column : 3 / 5;
+        }
 
     /*HEADER/FOOTER BOKSER - Duplikat av formatering for <800px skjermbredde, noe som medfører litt bloat,
     men da er det enkelt tilgjengelig for differensiert formatering dersom nødvendig*/
     .header-grid {
-        display: grid;
-        grid-template-columns: 50% 50% 0;
-        grid-template-rows: auto;
-    }
+        display               : grid;
+        grid-template-columns : 50% 50% 0;
+        grid-template-rows    : auto;
+        }
 
     .header-left {
-        grid-column: 1 / 2;
-    }
+        grid-column : 1 / 2;
+        }
 
     .header-right {
-        grid-column: 2 / 3;
-        text-align: right;
-    }
+        grid-column : 2 / 3;
+        text-align  : right;
+        }
 
     .footer-grid {
-        display: grid;
-        grid-template-columns: 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
-        grid-template-rows: auto;
-    }
+        display               : grid;
+        grid-template-columns : 20% minmax(30%, auto) minmax(30%, auto) 20% 0;
+        grid-template-rows    : auto;
+        }
 
     .footer-main-box {
-        grid-column: 2 / 4;
+        grid-column : 2 / 4;
+        }
     }
-}
