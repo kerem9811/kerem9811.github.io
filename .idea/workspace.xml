@@ -7,14 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1ab7b73-4d68-4e90-874b-06fb6972889c" name="Changes" comment="text">
+    <list default="true" id="e1ab7b73-4d68-4e90-874b-06fb6972889c" name="Changes" comment="links og bg-colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibility.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kantina.html" beforeDir="false" afterPath="$PROJECT_DIR$/kantina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/points-of-interest.html" beforeDir="false" afterPath="$PROJECT_DIR$/points-of-interest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topical.html" beforeDir="false" afterPath="$PROJECT_DIR$/topical.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699445186027</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="links og bg-colors">
+      <option name="closed" value="true" />
+      <created>1700561781122</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700561781123</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +334,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -358,6 +361,7 @@
     <MESSAGE value="pages" />
     <MESSAGE value="dunno" />
     <MESSAGE value="text" />
-    <option name="LAST_COMMIT_MESSAGE" value="text" />
+    <MESSAGE value="links og bg-colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="links og bg-colors" />
   </component>
 </project>

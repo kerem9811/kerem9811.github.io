@@ -62,7 +62,6 @@ header {
 /* Linker inni dropdown ------------------*/
 .dropdown-content a {
     color           : black;
-    padding         : 12px 20px;
     text-decoration : none;
     display         : block;
     font-weight     : bold;
@@ -155,7 +154,14 @@ video {
         padding-bottom   : 2rem;
         max-height       : fit-content;
         }
+    .dropdown-content a{
+        padding-top     : 5px;
+        padding-bottom  : 5px;
+        padding-left    : 20px;
+        padding-right   : 20px;
+        }
     }
+
 
 /* FORMATERING VED DESKTOP-VISNING, 801PX OG MER -------------------------------------------------------------- */
 @media screen and (min-width : 801px) {
@@ -194,7 +200,15 @@ video {
         padding-bottom   : 2rem;
         max-height       : fit-content;
         }
+
+    .dropdown-content a{
+        padding-top     : 12px;
+        padding-bottom  : 12px;
+        padding-left    : 20px;
+        padding-right   : 20px;
+        }
     }
+
 
 /* SEMANTISKE ELEMENTER, HEADINGER, ETC. --------------------------------------------------------------*/
 main {
