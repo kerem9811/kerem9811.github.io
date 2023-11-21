@@ -72,7 +72,7 @@ header {
     text-align      : left;
     }
 
-/* Bytte farge på linker når man "hovrer" over */
+/* Bytte farge på linker når man "hovrer" over  */
 .dropdown-content a:hover {
     background-color : var(--darken);
     }
