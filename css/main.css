@@ -80,7 +80,6 @@ header {
 /* Vise dropdown menyen når man "hovrer" over */
 .dropdown:hover .dropdown-content {
     display : block;
-    font-size: 0.65em;
     }
 
 /* BODY FORMATERING  -------------------------------------------------------------------------*/
