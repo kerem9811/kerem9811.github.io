@@ -2,49 +2,30 @@
 <html lang="nb">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Dette er hovedsiden til eksamen i Data 1200 Webutvikling og
+    <meta name="description" content="Dette er siden med informasjon om Serj Tankian, i eksamen i Data 1200 Webutvikling og
          inkluderende design, fra gruppe 96.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/grid.css">
-    <title>Data 1200 - Webutvikling og inkluderende design - H23 -  Eksamen - Gruppe 96</title>
+    <title>Data 1200 - Webutvikling og inkluderende design - H23 - Eksamen - Gruppe 96</title>
 </head>
-<!-- Topical-page
-Copy a short text (anywhere from 300 to 1000 words) from 
-DATA1100 Technology and Society for Programmers or other subject you have completed.
-(Or write a new, short text.)
-
-Add images (if there are none). Remember that in Norwegian copyright law, 
-photographer must always be included. (Might be organisation, e.g."Photo: Scanpix",
-can be in the code, hence invisible on the page itself.)
-
-Add headings (if there are none).
-
-Add links (if there are none). This text should have multiple links to external 
-sites with relevant information. We shall not grade you on how relevant the 
-information you link to is, but we expect several links, and we expect it to be easy
-to understand before clicking what information you lead us to.
-
-If you wish to show off some skills, but found that difficult with the other pages, 
-you can make this (or another) page different from the others, with a distinct 
-visual of functional identity. -->
 
 <body class="topical-body">
 <header class="header-grid">
     <div class="header-left">
-        <a href="index.html" class="home-link">Hjem</a>
+        <a href="index.html" title="Hjemknapp" class="home-link">Hjem</a>
     </div>
     <div class="header-right">
         <div class="header-text">
             <div class="dropdown">
-                <button class="dropdown-button"> ☰ Meny</button>
-                <div class="dropdown-content">
+                <button class="dropdown-button" type="button" value="hover meny"> ☰ Meny</button>
+                <nav class="dropdown-content">
                     <a href="index.html">Hovedside</a>
                     <a href="points-of-interest.html">Viktige steder</a>
                     <a href="kantina.html">Kantina</a>
                     <a href="topical.html">Tankian</a>
                     <a href="accessibility.html">Tilgjengelighet</a>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -54,98 +35,167 @@ visual of functional identity. -->
         <h1>
             Tengel = Tankian?
         </h1>
-        <div class="subtitle">
-            Ikke alle er hvem du tror de er
-        </div>
+        <p class="subtitle">
+            Ikke alle er den du tror de er...
+        </p>
     </section>
+    <div>
+        <!-- Siden background image i utgangspunktet ikke har alt-tekst er dette en metode for å lage alt-tekst til
+         background-image. Oppskrift hentet fra: https://www.davidmacd.com/blog/alternate-text-for-css-background-images.html -->
+        <span class="background-image" role="img" aria-label="En animasjon av et ansikt som transformerer
+             fra Tankian til Tengel"> </span>
+    </div>
 
-    <section class="main-center-box">
+    <section class="main-center-box main-center-box-topical">
 
-        <p>
-            <i>Disclaimer: Alt på denne siden er ren fiksjon ment som en spøk i god tro, og er ikke
+        <p class="topical-paragraph">
+            <em> <strong>Disclaimer: </strong> Alt på denne siden er ren fiksjon ment som en spøk i god tro, og er ikke
                 på noe vis laget for å gjøre narr av personen(e) omtalt. Vi håper og tror at vedkommende
                 kommer til å se innholdet på denne siden som velment, og om det ikke er tilfellet så
-                ligger alt ansvar for det på oss og vår humoristiske dømmekraft.</i>
+                ligger alt ansvar for det på oss og vår humoristiske dømmekraft.</em>
         </p>
 
-        <h2>
+        <picture>
+            <img class="image-container-center" src="media/images/tankian-concert.webp"
+                 alt="Serj Tankian synger en sang"
+                 width="942" height="623">
+            <!--   https://www.billboard.com/wp-content/uploads/media/system-of-a-down-live-billboard-1548.jpg -->
+        </picture>
+
+        <h2 class="topical-heading">
             Tengels skjulte fortid, en internasjonal konspirasjon
         </h2>
 
-        <p>
+        <p class="topical-paragraph">
             Tengel dukket plutselig opp i 2013, tilsynelatende fra ingensteds, for å undervise
             ved det som da het Høgskolen i Oslo og Akershus. Dette er tilfeldigvis også året da Serj
-            Tankian fra System of a Down (link start)gav ut musikk for (foreløpig) siste gang(link slutt). Dette kan selvsagt
-            være en ren tilfeldighet, men som vi skal se videre så er det en rekke faktorer i spill,
+            Tankian fra System of a Down
+            <a href="https://no.wikipedia.org/wiki/Serj_Tankian"
+               title="Wikipedia: Tankian sitt siste solo-album kom i 2013">gav ut musikk for (foreløpig) siste gang</a>.
+            Dette kan selvsagt være en ren tilfeldighet, men som vi skal se videre så er det en rekke faktorer i spill,
             som hver for seg ikke utgjør så mye, men som helhet ikke kan oversees.
         </p>
 
-        <h2>
+        <p class="topical-paragraph">
+            Flere mener at grunnen til at
+            <a href="https://www.billboard.com/music/rock/system-of-a-down-soad-serj-tankian-
+                daron-malakian-break-silence-about-lack-new-music-8465459/"
+               title="billboard.com: Tankian snakker ut">System Of A Down ikke har gitt ut musikk på mange år</a>
+            er at frontfigur Serj Tankian ble sliten av turné-livet og
+            <a href="https://www.tiktok.com/@zombieroca/video/7166072783171095851"
+               title="Video fra TikTok av Tankian som savner kattene sine under en konsert">
+                ville roe ned med kattene sine.</a>
+            Etterhvert fant han sannsynligvis sitt nye mål i livet, nemlig undervisning av HTML og CSS
+            til lærevillige studenter. Selvfølgelig ønsker vi alle at System Of A Down hadde fortsatt
+            suksessen med å gi ut enda
+            <a href="https://www.tiktok.com/@konkoinduueq/video/7120568926873931014"
+               title="Video fra TikTok av katter som synger til Chop Suey">
+                mer musikk som for eksempel Chop Suey,</a>
+            men vi er glade for at vi har fått en god lærer i "Tengel".
+        </p>
+
+        <h2 class="topical-heading">
             Clark Kent-metoden
         </h2>
 
-        <!--Figure her med bilde av tengel med headset, og serj med headset-->
-
-        <p>
-            Som man kan se ut ifra disse bildene, så er det så påfallende likt at man bortimot kan anta at
-            det er samme person, bare med og uten briller. (link til bilde av groucho glasses start) Briller er en
-            klassisk metode brukt i forkledning(link slutt), gjort kjent bl.a. av Clark Kent, som vi også
-            kjenner som Superman.
+        <p class="topical-paragraph">
+            Som man kan se ut ifra disse bildene, så er de så påfallende like at man bortimot kan anta at
+            det er samme person, bare med og uten briller.
+            <a href="https://en.wikipedia.org/wiki/Groucho_glasses"
+               title="Wikipedia: klassisk brille-forkledning">Briller er en klassisk metode brukt som forkledning,</a>
+            gjort kjent bl.a. av Clark Kent, som vi også kjenner som Supermann.
         </p>
 
-        <h2>
+        <picture>
+            <img id="headsetimage" src="media/images/headsettengtank.webp" alt="Bilder av Serj Tankian og
+                Tengel side om side med headset på" width="832" height="423">
+            <!--   Foto: balin6546 & https://www.beirutnightlife.com/wp-content/uploads/2011/08/Serj_Tankian_interview_NRJ_system_of_a_down_3.jpg."-->
+        </picture>
+
+        <h2 class="topical-heading">
             En naturlig overgang
         </h2>
 
-        <p>
+        <p class="topical-paragraph">
             Hva skal man ta seg til når man skal forlate tilværelsen som frontmann for det eneste intelligente
             nu-metal bandet? (Ok, Deftones teller også med her.) Som intelligent person vil man, oftere enn ikke,
             velge en vei videre som passer med disse egenskapene. Data er smart, og blir jobbet med av smarte
             folk. Say no more.
         </p>
 
-        <h2>
+        <h2 class="topical-heading">
             "The smoking gun" - Bevis ved selvmotsigelse
         </h2>
 
-        <h3>
+        <h3 class="topical-heading">
             Beskrivelse av metode
         </h3>
 
-        <p>
+        <p class="topical-paragraph">
             Bevis ved selvmotsigelse er når man tar et utsagn, antar at det motsatte er sant, og gjennom
             logisk resonnement kommer fram til at antagelsen medfører en selvmotsigelse som motbeviser
             antakelsen. Når man da har motbevist det motsatte av det opprinnelige utsagnet, så er det
             opprinnelige utsagnet å anse som bevist sant.
         </p>
 
-        <h3>
+        <h3 class="topical-heading">
             Beviset for at Tengel og Serj Tankian er samme person
         </h3>
 
-        <p>
-            Gitt av valgt metode må vi starte med å anta at Tengel og Tankian <i>ikke</i> er samme person.
+        <p class="topical-paragraph">
+            Gitt av valgt metode må vi starte med å anta at Tengel og Tankian <em>ikke</em> er samme person.
             En egenskap som oppstår når to personer ikke er samme person er at man da kan se disse personene
             i samme rom som to separate individer. Serj Tankian og Tengel Sandtrø har aldri blitt dokumentert
             som observert i samme rom samtidig. I vitenskapen så er et fenomen som ikke noen gang har blitt observert,
-            målt eller på annen måte å anse som ikkeeksisterende frem til dokumentasjon kan oppdrives. Dermed er
+            målt eller på annen måte å anse som ikke-eksisterende frem til dokumentasjon kan oppdrives. Dermed er
             påstanden om at Tengel og Tankian er forskjellige personer beviselig usann, og etter metodens natur
-            kan påstanden om at de <i>er</i> samme person nå ansees som bevist.
+            kan påstanden om at de <em>er</em> samme person nå ansees som bevist.
         </p>
 
-        <h2>
+        <h2 class="topical-heading">
             Konklusjon
         </h2>
 
-        <p>
+        <p class="topical-paragraph">
             Som vi nå har avdekket, er det så mange piler som peker mot at Tengel Sandtrø og Serj Tankian er samme
             person, at det ikke lenger er mulig å overse.
-            Ettervirkninene av denne rystende avsløringen kan vi enda ikke si noe om, men det vil utvilsomt
+            Ettervirkningene av denne rystende avsløringen kan vi enda ikke si noe om, men det vil utvilsomt
             ha enorme ringvirkninger. Studentene bak denne artikkelen vil høyst sannsynlig også måtte gå i skjul
-            så snart denne besvarelsen er levert, da oppnøstingen av en global konspirasjon av denne magnituden
+            så snart denne besvarelsen er levert, da oppnøstingen av en global konspirasjon av denne størrelsen
             utvilsomt vil føre med seg konsekvenser. Men det er et valg noen måtte ta, og den byrden har vi valgt
-            å bære, for samfunnet og menneskeheten.
+            å bære, for samfunnet og menneskeheten!
         </p>
+
+        <h2 class="topical-heading">
+            Videobevis
+        </h2>
+
+        <video width="480" height="600" controls poster="media/images/tankianpic.webp">
+            <!-- Kilder:
+            https://commons.wikimedia.org/wiki/File:Serj_Tankian_2006_(cropped).jpg
+            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OrbqilOPgpiUWZRcnkY47hYtuVS5JsOwD9etBSn8lC5L-f8cDPrCh8ewSQGT8lWhVp4&usqp=CAU
+            Videoen er laget av kerem9811 -->
+
+            <source src="media/video/tengtankcrop.webm" type="video/webm"/>
+            <source src="media/video/tengtankcrop.mp4" type="video/mp4"/>
+            Last ned
+            <a href="media/video/tengtankcrop.webm">webm</a>
+        </video>
+
+        <h2 class="topical-heading">
+            Bildebevis
+        </h2>
+
+        <details>
+            <summary>Trykk for bevis for at Tankian = Tengel</summary>
+            <picture>
+                <img class="image-container-center" src="media/images/tankianmorph.gif" alt="Ansiktet til Serj Tankian
+blir transformert til Tengel og tilbake" width="600" height="742">
+                <!-- Kilder: https://commons.wikimedia.org/wiki/File:Serj_Tankian_2006_(cropped).jpg -->
+                <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OrbqilOPgpiUWZRcnkY47hYtuVS5JsOwD9etBSn8lC5L-f8cDPrCh8ewSQGT8lWhVp4&usqp=CAU -->
+                <!-- Gif-en er laget av kerem9811 -->
+            </picture>
+        </details>
     </section>
 </main>
 
