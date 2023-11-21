@@ -17,7 +17,8 @@ iht eksamensoppgavetekstens deklarasjon av at to stylesheets er tillatt ved beho
 header {
     background-color : var(--primary-color);
     width            : 100%;
-    height           : 50px;
+    /*height           : 50px;*/
+    max-height       : 23vh;
     position         : sticky;
     font-weight      : bold;
     padding-top      : 0;
@@ -73,6 +74,7 @@ header {
 /* Bytte farge på linker når man "hovrer" over -------*/
 .dropdown-content a:hover {
     background-color : var(--darken);
+    font-size: 1.05rem;
     }
 
 /* Vise dropdown menyen når man "hovrer" over -------*/
@@ -106,7 +108,7 @@ video {
     height : auto;
     }
 
-.topical-center-box {
+.main-center-box-topical {
     background-position : top;
     background-size     : contain;
     align-content       : center;
