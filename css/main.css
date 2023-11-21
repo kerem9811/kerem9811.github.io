@@ -32,12 +32,15 @@ header {
 /* DROPDOWN MENY I HEADER --------------------------------------------+++++--------------------*/
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 /* Har brukt kilden over som inspirasjon og endret sånn at det passer oss */
+
+/* Formatering av dropdown-box */
 .dropdown {
     position: absolute;
     display: inline-block;
     right: 0;
 }
 
+/* Formatering av "Meny"-knapp */
 .dropdown-button {
     background-color: var(--primary-color);
     color: black;
@@ -49,7 +52,7 @@ header {
     padding-left: 20px;
 }
 
-/* Dropdown innhold (skjult som standard) -----------*/
+/* Formatering av innhold i Dropdown (skjult som standard) */
 .dropdown-content {
     display: none;
     position: sticky;
@@ -59,7 +62,7 @@ header {
     overflow: hidden;
 }
 
-/* Linker inni dropdown ------------------*/
+/* Linker inni dropdown */
 .dropdown-content a {
     color: black;
     text-decoration: none;
@@ -69,12 +72,12 @@ header {
     text-align: left;
 }
 
-/* Bytte farge på linker når man "hovrer" over -------*/
+/* Bytte farge på linker når man "hovrer" over */
 .dropdown-content a:hover {
     background-color: var(--darken);
 }
 
-/* Vise dropdown menyen når man "hovrer" over -------*/
+/* Vise dropdown menyen når man "hovrer" over */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -100,11 +103,13 @@ body {
     background-color: var(--bg-color-topical)
 }
 
+/* Formatering av video */
 video {
     width: 100%;
     height: auto;
 }
 
+/* Formatering av sentrert boks med innhold */
 .topical-center-box {
     background-position: top;
     background-size: contain;
@@ -112,9 +117,11 @@ video {
     background-color: var(--bg-color-topical);
 }
 
+/* Egen bakgrunnsfarge for topical avsnitt */
 .topical-paragraph .topical-heading {
     background-color: var(--bg-color-topical);
 }
+
 
 /* FORMATERING VED MOBIL-VISNING, 800PX OG MINDRE-----------------------------------------------------*/
 @media screen and (max-width: 800px) {
