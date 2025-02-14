@@ -1,0 +1,260 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 1200px; /* Adjust width as needed */
+}
+
+/* Header Styling */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-block {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 14px;
+    color: #777; /* Gray text */
+    margin-bottom: 5px;
+}
+
+.header-value-box {
+    background-color: #eee; /* Light gray box */
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+.header-value-box.orange-bg {
+    background-color: #ffe0b2; /* Light orange */
+}
+.header-value-box.light-orange-bg {
+    background-color: #ffecb3;
+}
+
+.header-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark text */
+    display: block;
+}
+
+.header-result {
+    font-size: 12px;
+    color: green; /* Green result text */
+    margin-top: 5px;
+}
+
+.period-block {
+    display: flex;
+    align-items: flex-end;
+}
+.period-text {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Main Section Styling */
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    margin-bottom: 20px;
+}
+
+/* Number Blocks Styling */
+.main-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-block {
+    text-align: center;
+}
+
+.number-title {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.number-value-box {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 180px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-value-box.large-box {
+    padding: 30px 20px; /* Larger padding for numbers */
+}
+.number-value-box.light-green-bg {
+    background-color: #c8e6c9; /* Light green */
+}
+
+.number-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Percentage Blocks Styling */
+.percentages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.percentage-block {
+    text-align: center;
+}
+
+.percentage-title {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.percentage-value-box {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.percentage-value-box.green-bg {
+    background-color: #a5d6a7; /* Light green */
+}
+.percentage-value-box.red-bg {
+    background-color: #ffcdd2; /* Light red */
+}
+
+.percentage-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.percentage-change {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.percentage-change-period {
+    display: block; /* Make the period text go to a new line */
+    font-size: 10px;
+    color: #777;
+}
+
+/* Chart Section Styling */
+.chart-section {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    height: 300px; /* Adjust chart height as needed */
+}
+
+/* Tables Section Styling */
+.tables-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-block {
+    width: 48%; /* Adjust width as needed for tables */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* To contain rounded corners */
+}
+
+.table-title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+thead th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #555;
+}
+
+tbody tr:last-child td {
+    border-bottom: none; /* Remove border from last row */
+}
+
+/* LinkedIn Stats Section Styling */
+.linkedin-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkedin-block {
+    text-align: center;
+}
+
+.linkedin-title {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.linkedin-value-box {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+.linkedin-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    display: block; /* Ensure text-below works correctly */
+}
+
+.linkedin-change, .linkedin-text-below {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+.linkedin-change-period {
+    display: inline; /* Keep period text in line */
+}

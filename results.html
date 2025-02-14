@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-block">
+                <p class="header-title">FORVENTET DENNE MÅNEDEN</p>
+                <div class="header-value-box orange-bg">
+                    <span class="header-value">5 554 123</span>
+                    <p class="header-result">RESULTAT + 326 154</p>
+                </div>
+            </div>
+            <div class="header-block">
+                <p class="header-title">FORRIGE MANED</p>
+                <div class="header-value-box">
+                    <span class="header-value">4 954 123</span>
+                    <p class="header-result">RESULTAT + 345 -222</p>
+                </div>
+            </div>
+            <div class="header-block">
+                <p class="header-title">SAMME MANGRO <br> HETTIL DENNE MANDEN</p>
+                <div class="header-value-box light-orange-bg">
+                    <span class="header-value">5 354 123</span>
+                    <p class="header-result">RESULTAT + 412 427</p>
+                </div>
+            </div>
+            <div class="period-block">
+                <p class="period-text">Verdier for perioden: 28.08.2024 - 26.09.2024</p>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="main-section main-numbers">
+                <div class="number-block">
+                    <p class="number-title">Omsetning denne måneden</p>
+                    <div class="number-value-box large-box">
+                        <span class="number-value">5 254 123</span>
+                    </div>
+                </div>
+                <div class="number-block">
+                    <p class="number-title">Forrige måned</p>
+                    <div class="number-value-box large-box">
+                        <span class="number-value">4 354 123</span>
+                    </div>
+                </div>
+                <div class="number-block">
+                    <p class="number-title">1476 543</p>
+                    <div class="number-value-box large-box light-green-bg">
+                        <span class="number-value">1876 543</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-section percentages">
+                <div class="percentage-block">
+                    <p class="percentage-title">FAKTURERING OPPDRAG</p>
+                    <div class="percentage-value-box green-bg">
+                        <span class="percentage-value">95%</span>
+                    </div>
+                </div>
+                <div class="percentage-block">
+                    <p class="percentage-title">KONSULENTERI OPPDRAG</p>
+                    <div class="percentage-value-box red-bg">
+                        <span class="percentage-value">86%</span>
+                        <p class="percentage-change">-4% <span class="percentage-change-period">Forrige <br> 14 dager</span></p>
+                    </div>
+                </div>
+                <div class="percentage-block">
+                    <p class="percentage-title">GJENNOMSNITTLIO TIMERATE</p>
+                    <div class="percentage-value-box">
+                        <span class="percentage-value">1598</span>
+                        <p class="percentage-change">+ 86 <span class="percentage-change-period">Forrige <br> 14 dager</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-section chart-section">
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </section>
+
+            <section class="main-section tables-section">
+                <div class="table-block kommende-bursdager">
+                    <p class="table-title">Kommende bursdager</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nam</th>
+                                <th>Dagen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Adrian</td><td>21.09</td></tr>
+                            <tr><td>Sik</td><td>30.09</td></tr>
+                            <tr><td>Liens Expen</td><td>02.10</td></tr>
+                            <tr><td>Safe</td><td>24.30</td></tr>
+                            <tr><td>Mur</td><td>30.30</td></tr>
+                            <tr><td>3</td><td>03.31</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-block kommende-arrangementer">
+                    <p class="table-title">Kommende arrangementer</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Arrangement</th>
+                                <th>Dato</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Afdeling- <br> HeadLine outro</td><td>04.10</td></tr>
+                            <tr><td>Nebetingelser</td><td>18:30</td></tr>
+                            <tr><td>Afdeling- <br> Afdeling</td><td>21.09</td></tr>
+                            <tr><td>Afdeling - Spesial <br> Markedsføring</td><td>29.11</td></tr>
+                            <tr><td>StreetView <br> 17. mai</td><td>12.12</td></tr>
+                            <tr><td>Afdeling <br> Jubilee & edition</td><td>13.12</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="main-section linkedin-stats">
+                <div class="linkedin-block">
+                    <p class="linkedin-title">INNLEGG LINKEDIN</p>
+                    <div class="linkedin-value-box">
+                        <span class="linkedin-value">11</span>
+                        <p class="linkedin-change">-30% <span class="linkedin-change-period">Forrige periode</span></p>
+                    </div>
+                </div>
+                <div class="linkedin-block">
+                    <p class="linkedin-title">LINKEDIN VISNINGER</p>
+                    <div class="linkedin-value-box">
+                        <span class="linkedin-value">718</span>
+                        <p class="linkedin-change">+ 20% <span class="linkedin-change-period">Forrige periode</span></p>
+                    </div>
+                </div>
+                <div class="linkedin-block">
+                    <p class="linkedin-title">LINKEDIN NYE FOLDERE</p>
+                    <div class="linkedin-value-box">
+                        <span class="linkedin-value">70</span>
+                        <p class="linkedin-text-below">Tatu 12 245 folgers</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
