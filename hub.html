@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap5.3.3/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="roboto-mono-hub">
+    <div class="container-fluid">
+      <!-- TOP 3 BOXES -->
+      <div class="row" class="h-100 d-inline-block">
+        <div class="col-md-2" >
+          <div class="data-box" >
+            <h5 id="expected-revenue-label">
+              FORVENTET OMSETNING DENNE MÅNEDEN
+            </h5>
+            <h3 id="expected-revenue">Loading...</h3>
+            <!-- <p id="result-expected"></p> -->
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box">
+            <h5 id="previous-revenue-label">FORRIGE MÅNED</h5>
+            <h3 id="previous-revenue">Loading...</h3>
+            <!-- <p id="result-previous"></p> -->
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box">
+            <h5 id="best-revenue-label">BESTE MÅNED (APR-20)</h5>
+            <h3 id="best-revenue">Loading...</h3>
+            <!-- <p id="result-best"></p> -->
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box-2">
+            <h5 id="invoicing-label">FAKTURERING I OPPDRAG</h5>
+            <div class="data-percentage" id="invoicing-percentage">
+              Loading...
+            </div>
+            <p id="last-invoicing"></p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box-2">
+            <h5 id="consultants-label">KONSULENTER I OPPDRAG</h5>
+            <div class="data-percentage" id="consultants-percentage">
+              Loading...
+            </div>
+            <p id="last-consultants-label"></p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box-2">
+            <h5 id="hourly-rate-label">GJENNOMSNITTLIG TIMERATE</h5>
+            <div class="data-percentage" id="hourly-rate">Loading...</div>
+            <p id="last-hourly-rate-label"></p>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND ROW OF 3 BOXES -->
+      <div class="row">
+        <div class="col-md-2">
+          <div class="data-box">
+            <h5 id="budget-month-label">BUDSJETT DENNE MÅNEDEN</h5>
+            <h3 id="budget-month">Loading...</h3>
+            <!-- <p id="result-expected"></p> -->
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box">
+            <h5 id="budget-lastyear-label">SAMME MÅNED I FJOR</h5>
+            <h3 id="budget-lastyear">Loading...</h3>
+            <!-- <p id="result-previous"></p> -->
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box">
+            <h5 id="month-sofar-label">HITTIL DENNE MÅNEDEN</h5>
+            <h3 id="month-sofar">Loading...</h3>
+            <!-- <p id="result-best"></p> -->
+          </div>
+        </div>
+      </div>
+      <!-- DROPDOWN BUTTON -->
+      <!-- <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Periodevelger
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Desember 2024</a></li>
+          <li><a class="dropdown-item" href="#">Januar 2025</a></li>
+          <li><a class="dropdown-item" href="#">Februar 2025</a></li>
+          <li><a class="dropdown-item" href="#">Mars 2025</a></li>
+        </ul>
+      </div> -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="chart-container data-box">
+            <h5>Omsetning</h5>
+            <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Periodevelger
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Desember 2024</a></li>
+          <li><a class="dropdown-item" href="#">Januar 2025</a></li>
+          <li><a class="dropdown-item" href="#">Februar 2025</a></li>
+          <li><a class="dropdown-item" href="#">Mars 2025</a></li>
+        </ul>
+      </div>
+            <canvas id="revenueChart"></canvas>
+            <div class="chart-legend" id="chartLegend">
+              <div class="square-label current"></div>
+              <p>Denne måned</p>
+              <div class="square-label previous"></div>
+              <p>Forrige måned</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box upcoming-events">
+            <h5>Kommende arrangementer</h5>
+            <ul id="events-list">
+              Loading...
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="row"> -->
+        <div class="col-md-2">
+          <div class="data-box-2">
+            <h5>Tid siden siste timeføring</h5>
+            <ul id="time-since-last-entry-list">
+              Loading...
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="data-box-2">
+            <h5>Kommende bursdager</h5>
+            <ul id="birthday-list">
+              Loading...
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!-- </div> -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="data-box-2">
+              <div class="linked-in-data">
+                <h5 id="linkedin-posts-label">INNLEGG LINKEDIN</h5>
+                <div class="data-percentage" id="linkedin-posts">
+                  Loading...
+                </div>
+                <p id="last-linkedin-posts-label"></p>
+              </div>
+              <div class="linked-in-data">
+                <h5 id="linkedin-views-label">LINKEDIN VISNINGER</h5>
+                <div class="data-percentage" id="linkedin-views">
+                  Loading...
+                </div>
+                <p id="last-linkedin-views-label"></p>
+              </div>
+              <div class="linked-in-data">
+                <h5 id="linkedin-followers-label">LINKEDIN NYE FØLGERE</h5>
+                <div class="data-percentage" id="linkedin-followers">
+                  Loading...
+                </div>
+                <p id="last-linkedin-followers-label"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

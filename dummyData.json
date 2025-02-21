@@ -1,0 +1,39 @@
+{
+  "expectedRevenue": { "value": 5554123, "result": "Positiv" },
+  "budgetMonth": { "value": 5254123, "result": "Positiv" },
+  "budgetLastYear": { "value": 4354123, "result": "Positiv" },
+  "monthSofar": { "value": 1876543, "result": "Positiv" },
+  "previousRevenue": { "value": 4954123, "result": "Positiv" },
+  "bestRevenue": { "value": 6354123, "result": "Positiv" },
+  "invoicingPercentage": { "value": "75%", "previous": "70%" },
+  "consultantsPercentage": { "value": "80%", "previous": "75%" },
+  "hourlyRate": { "value": 1200, "previous": 1150 },
+  "chartData": {
+    "labels": ["Week 1", "Week 2", "Week 3", "Week 4"],
+    "currentMonth": [120000, 130000, 140000, 110000],
+    "previousMonth": [110000, 120000, 130000, 90000]
+  },
+  "events": [
+    { "name": "Project Kickoff", "date": "2024-09-01" },
+    { "name": "Status Meeting", "date": "2024-09-04" },
+    { "name": "Project Review", "date": "2024-09-07" },
+    { "name": "Client Meeting", "date": "2024-09-15" }
+  ],
+  "timeSinceLastEntry": [
+    { "name": "John Doe", "days": 2 },
+    { "name": "James Dyson", "days": 10 },
+    { "name": "Joan Sanders", "days": 12 },
+    { "name": "Jane Smith", "days": 5 }
+  ],
+  "birthdays": [
+    { "name": "Alice Johnson", "date": "2024-09-10" },
+    { "name": "Bob Brown", "date": "2024-01-11" },
+    { "name": "Frank Carter", "date": "2024-01-21" },
+    { "name": "Bob Brown", "date": "2024-09-20" }
+  ],
+  "linkedin": {
+    "posts": { "count": 10, "change": "+2" },
+    "views": { "count": 500, "change": "+50" },
+    "followers": { "count": 20, "change": "+5", "total": 200 }
+  }
+}

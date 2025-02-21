@@ -1,0 +1,234 @@
+@import "css/";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
+
+/* 
+Responsive font size using viewport width
+h3, h5 {
+  font-size: 2vw; /* Adjust the value as needed 
+} 
+*/
+
+/* Media queries for finer control */
+@media (max-width: 1200px) {
+  body, h3, h5 {
+    font-size: 1px;
+  }
+}
+
+@media (max-width: 992px) {
+  h3, h5 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  h3, h5 {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  h3, h5 {
+    font-size: 6vw;
+  }
+}
+
+/* Define color variables */
+:root {
+  --background-color: #d4d0c3;
+  --blue-color: #b6bbb2;
+  --green-color: #6f7d54;
+  --yellow-color: #bc9a5e;
+  --red-color: #982f2b;
+  --blackish-color: #2d2923;
+}
+
+.roboto-mono-hub {
+  font-family: "Roboto Mono", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--background-color);
+  color: #333;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+/* Top Data Boxes */
+.data-box {
+  background-color: var(--blue-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.data-box h5 {
+  color: #666;
+  /* font-size: 1rem; */
+  margin-bottom: 5px;
+  text-transform: uppercase; /* Make labels uppercase */
+}
+
+.data-box h3 {
+  color: #333;
+  /* font-size: 1.8rem; */
+  font-weight: bold;
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.data-box p {
+  /* font-size: 0.9rem; */
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Smaller Data Boxes (Percentages & LinkedIn) */
+.data-box-2 {
+  background-color: var(--blue-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-box-2 h5 {
+  color: #666;
+  /* font-size: 1rem; */
+  margin-bottom: 10px; /* More space below h5 */
+  text-transform: uppercase;
+}
+/*period class*/
+.period p {
+  /* font-size: small; */
+  color: grey;
+  text-align: right;
+}
+
+.data-percentage {
+  /* font-size: 2.5rem; Larger percentage */
+  font-weight: bold;
+  color: #4caf50; /* Green for positive values */
+  margin-bottom: 5px;
+}
+/*linked-in-data*/
+.linked-in-data {
+  background-color: var(--yellow-color);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.linked-in-data:last-child {
+  border-bottom: none; /* Remove border for the last section */
+}
+
+.linked-in-data .data-percentage {
+  color: #ff9800; /* Orange for LinkedIn */
+  /* font-size: 1.5rem; Larger percentage */
+}
+
+/* Chart Styling */
+.chart-container {
+  position: relative;
+  background-color: var(--blue-color);
+}
+
+.chart-legend {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chart-legend p {
+  display: inline-block;
+  margin: 0 10px;
+  /* font-size: 0.8rem; */
+  color: #666;
+}
+
+.current {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: #2596be;
+  vertical-align: middle;
+}
+
+.previous {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: rgba(146, 154, 155, 0.6);
+  vertical-align: middle;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+  height: 300px; /* Consistent height */
+  overflow-y: auto;
+  padding-right: 10px; /* Add some padding to avoid scrollbar overlap */
+}
+
+.upcoming-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-events li {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0; /* Reduced padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out name and date */
+  align-items: center; /* Vertically center content */
+  /* font-size: 0.9rem; */
+}
+.upcoming-events li:last-child {
+  border-bottom: none;
+}
+
+.upcoming-events li .event-date {
+  color: #888;
+  /* font-size: 0.8rem; Slightly smaller date */
+}
+
+/* Time Since Last Entry & Birthdays (Similar to Events) */
+#time-since-last-entry-list,
+#birthday-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#time-since-last-entry-list li,
+#birthday-list li {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 0.9rem; */
+}
+
+#time-since-last-entry-list li .days,
+#birthday-list li .event-date {
+  color: #888;
+  /* font-size: 0.8rem; */
+}
+/*remove last border*/
+#time-since-last-entry-list li:last-child,
+#birthday-list li:last-child {
+  border-bottom: none;
+}
+
+h5 {
+  color: var(--blackish-color);
+}
